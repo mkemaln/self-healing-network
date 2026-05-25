@@ -3,23 +3,23 @@ import csv
 import sys
 from datetime import datetime, timezone
 from collections import defaultdict
-from onos_client import ONOSClient
+from sdn_client import SDNClient
 
 
 class NetworkMonitor:
-    def __init__(self, onos_url="http://localhost:8181", poll_interval=5):
-        self.client = ONOSClient(onos_url)
+    def __init__(self, sdn_url="http://localhost:8181", poll_interval=5):
+        self.client = SDNClient(sdn_url)
         self.interval = poll_interval
         self.prev_stats = {}
         self.prev_time = None
 
     def poll(self):
-        devices = self.client.get_devices()
+        nodes = self.client.get_nodes()
         links = self.client.get_links()
         port_stats = self.client.get_all_port_stats()
         now = time.time()
 
-        device_map = {d["id"]: d for d in devices}
+        node_map = {n.get("id", n.get("node-id")): n for n in nodes}
 
         rows = []
         for link in links:
@@ -47,8 +47,8 @@ class NetworkMonitor:
                 "src_port": src_port,
                 "dst_device": dst_device,
                 "dst_port": dst_port,
-                "src_available": device_map.get(src_device, {}).get("available", False),
-                "dst_available": device_map.get(dst_device, {}).get("available", False),
+                "src_available": src_device in node_map,
+                "dst_available": dst_device in node_map,
             }
 
             if src_stats and dst_stats:
