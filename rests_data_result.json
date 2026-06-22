@@ -1,0 +1,3391 @@
+{
+  "ietf-yang-library:modules-state": {
+    "module": [
+      {
+        "name": "opendaylight-flow-table-statistics_2013-12-15",
+        "revision": "2013-12-15",
+        "schema": "/rests/modules/opendaylight-flow-table-statistics?revision=2013-12-15",
+        "namespace": "urn:opendaylight:flow:table:statistics",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflowplugin-extension-nicira-match_2014-07-14",
+        "revision": "2014-07-14",
+        "schema": "/rests/modules/openflowplugin-extension-nicira-match?revision=2014-07-14",
+        "namespace": "urn:opendaylight:openflowplugin:extension:nicira:match",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-http-server_2025-11-11",
+        "revision": "2025-11-11",
+        "schema": "/rests/modules/ietf-http-server?revision=2025-11-11",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-http-server",
+        "conformance-type": "import",
+        "feature": [
+          "local-users-supported",
+          "basic-auth",
+          "tcp-supported",
+          "tls-supported",
+          "client-auth-supported"
+        ]
+      },
+      {
+        "name": "ietf-crypto-types_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-crypto-types?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-crypto-types",
+        "conformance-type": "import",
+        "feature": [
+          "one-asymmetric-key-format",
+          "hidden-private-keys",
+          "cleartext-passwords",
+          "one-symmetric-key-format",
+          "p10-csr-format",
+          "encrypted-symmetric-keys",
+          "cleartext-symmetric-keys",
+          "cms-enveloped-data-format",
+          "csr-generation",
+          "hidden-symmetric-keys",
+          "encrypted-passwords",
+          "encrypted-private-keys",
+          "asymmetrically-encrypted-value-format",
+          "cms-encrypted-data-format",
+          "cleartext-private-keys",
+          "symmetrically-encrypted-value-format",
+          "certificate-expiration-notification"
+        ]
+      },
+      {
+        "name": "batch-common_2016-03-22",
+        "revision": "2016-03-22",
+        "schema": "/rests/modules/batch-common?revision=2016-03-22",
+        "namespace": "urn:opendaylight:service:batch:common",
+        "conformance-type": "import"
+      },
+      {
+        "name": "lldp-speaker_2014-10-23",
+        "revision": "2014-10-23",
+        "schema": "/rests/modules/lldp-speaker?revision=2014-10-23",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:applications:lldp-speaker",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflowplugin-extension-general_2014-07-14",
+        "revision": "2014-07-14",
+        "schema": "/rests/modules/openflowplugin-extension-general?revision=2014-07-14",
+        "namespace": "urn:opendaylight:openflowplugin:extension:general",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-port-statistics_2013-12-14",
+        "revision": "2013-12-14",
+        "schema": "/rests/modules/opendaylight-port-statistics?revision=2013-12-14",
+        "namespace": "urn:opendaylight:port:statistics",
+        "conformance-type": "import"
+      },
+      {
+        "name": "aaa-app-config_2017-06-19",
+        "revision": "2017-06-19",
+        "schema": "/rests/modules/aaa-app-config?revision=2017-06-19",
+        "namespace": "urn:opendaylight:aaa:app:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "topology-lldp-discovery-config_2016-05-11",
+        "revision": "2016-05-11",
+        "schema": "/rests/modules/topology-lldp-discovery-config?revision=2016-05-11",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:topology-lldp-discovery:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-network-instance_2019-01-21",
+        "revision": "2019-01-21",
+        "schema": "/rests/modules/ietf-network-instance?revision=2019-01-21",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-network-instance",
+        "conformance-type": "import"
+      },
+      {
+        "name": "nicira-action_2014-04-21",
+        "revision": "2014-04-21",
+        "schema": "/rests/modules/nicira-action?revision=2014-04-21",
+        "namespace": "urn:opendaylight:openflowjava:nx:action",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-yang-schema-mount_2019-01-14",
+        "revision": "2019-01-14",
+        "schema": "/rests/modules/ietf-yang-schema-mount?revision=2019-01-14",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-schema-mount",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-http-client_2024-02-08",
+        "revision": "2024-02-08",
+        "schema": "/rests/modules/ietf-http-client?revision=2024-02-08",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-http-client",
+        "conformance-type": "import",
+        "feature": [
+          "basic-auth",
+          "tcp-supported",
+          "tls-supported"
+        ]
+      },
+      {
+        "name": "nicira-match_2014-04-21",
+        "revision": "2014-04-21",
+        "schema": "/rests/modules/nicira-match?revision=2014-04-21",
+        "namespace": "urn:opendaylight:openflowjava:nx:match",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-ssh-common_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-ssh-common?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-common",
+        "conformance-type": "import",
+        "feature": [
+          "ssh-x509-certs",
+          "transport-params"
+        ]
+      },
+      {
+        "name": "frm-reconciliation_2018-02-27",
+        "revision": "2018-02-27",
+        "schema": "/rests/modules/frm-reconciliation?revision=2018-02-27",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:frm-reconciliation:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-ssh-server_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-ssh-server?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-server",
+        "conformance-type": "import",
+        "feature": [
+          "local-users-supported",
+          "local-user-auth-publickey",
+          "local-user-auth-password",
+          "ssh-server-keepalives",
+          "local-user-auth-hostbased"
+        ]
+      },
+      {
+        "name": "ietf-inet-types_2013-07-15",
+        "revision": "2013-07-15",
+        "schema": "/rests/modules/ietf-inet-types?revision=2013-07-15",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-experimenter-message_2015-10-20",
+        "revision": "2015-10-20",
+        "schema": "/rests/modules/sal-experimenter-message?revision=2015-10-20",
+        "namespace": "urn:opendaylight:experimenter-message:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-tcp-server_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-tcp-server?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-tcp-server",
+        "conformance-type": "import",
+        "feature": [
+          "tcp-server-keepalives"
+        ]
+      },
+      {
+        "name": "sal-flow_2013-08-19",
+        "revision": "2013-08-19",
+        "schema": "/rests/modules/sal-flow?revision=2013-08-19",
+        "namespace": "urn:opendaylight:flow:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-port_2013-11-07",
+        "revision": "2013-11-07",
+        "schema": "/rests/modules/sal-port?revision=2013-11-07",
+        "namespace": "urn:opendaylight:port:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "iana-tls-cipher-suite-algs_2024-10-16",
+        "revision": "2024-10-16",
+        "schema": "/rests/modules/iana-tls-cipher-suite-algs?revision=2024-10-16",
+        "namespace": "urn:ietf:params:xml:ns:yang:iana-tls-cipher-suite-algs",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-subscribed-notifications_2019-09-09",
+        "revision": "2019-09-09",
+        "schema": "/rests/modules/ietf-subscribed-notifications?revision=2019-09-09",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-subscribed-notifications",
+        "conformance-type": "import",
+        "feature": [
+          "subtree",
+          "encode-xml",
+          "encode-json"
+        ]
+      },
+      {
+        "name": "flow-topology-discovery_2013-08-19",
+        "revision": "2013-08-19",
+        "schema": "/rests/modules/flow-topology-discovery?revision=2013-08-19",
+        "namespace": "urn:opendaylight:flow:topology:discovery",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-netconf-notifications_2012-02-06",
+        "revision": "2012-02-06",
+        "schema": "/rests/modules/ietf-netconf-notifications?revision=2012-02-06",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-notifications",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-queue-types_2013-09-25",
+        "revision": "2013-09-25",
+        "schema": "/rests/modules/opendaylight-queue-types?revision=2013-09-25",
+        "namespace": "urn:opendaylight:flow:types:queue",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-echo_2015-03-05",
+        "revision": "2015-03-05",
+        "schema": "/rests/modules/sal-echo?revision=2015-03-05",
+        "namespace": "urn:opendaylight:echo:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "statistics-manager-control_2015-08-12",
+        "revision": "2015-08-12",
+        "schema": "/rests/modules/statistics-manager-control?revision=2015-08-12",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:sm:control",
+        "conformance-type": "import"
+      },
+      {
+        "name": "barrier-common_2016-03-15",
+        "revision": "2016-03-15",
+        "schema": "/rests/modules/barrier-common?revision=2016-03-15",
+        "namespace": "urn:opendaylight:service:barrier:common",
+        "conformance-type": "import"
+      },
+      {
+        "name": "flow-capable-transaction_2015-03-04",
+        "revision": "2015-03-04",
+        "schema": "/rests/modules/flow-capable-transaction?revision=2015-03-04",
+        "namespace": "urn:opendaylight:flow:transaction",
+        "conformance-type": "import"
+      },
+      {
+        "name": "iana-ssh-mac-algs_2024-10-16",
+        "revision": "2024-10-16",
+        "schema": "/rests/modules/iana-ssh-mac-algs?revision=2024-10-16",
+        "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-mac-algs",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-topology-inventory_2013-10-30",
+        "revision": "2013-10-30",
+        "schema": "/rests/modules/opendaylight-topology-inventory?revision=2013-10-30",
+        "namespace": "urn:opendaylight:model:topology:inventory",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-ssh-client_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-ssh-client?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-client",
+        "conformance-type": "import",
+        "feature": [
+          "client-ident-hostbased",
+          "ssh-client-keepalives",
+          "client-ident-password",
+          "client-ident-publickey"
+        ]
+      },
+      {
+        "name": "odl-controller-cds-types_2025-01-31",
+        "revision": "2025-01-31",
+        "schema": "/rests/modules/odl-controller-cds-types?revision=2025-01-31",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:controller:cds:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-meter-statistics_2013-11-11",
+        "revision": "2013-11-11",
+        "schema": "/rests/modules/opendaylight-meter-statistics?revision=2013-11-11",
+        "namespace": "urn:opendaylight:meter:statistics",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-tls-server_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-tls-server?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-server",
+        "conformance-type": "import",
+        "feature": [
+          "server-ident-x509-cert",
+          "client-auth-x509-cert",
+          "client-auth-supported"
+        ]
+      },
+      {
+        "name": "ietf-restconf-monitoring_2017-01-26",
+        "revision": "2017-01-26",
+        "schema": "/rests/modules/ietf-restconf-monitoring?revision=2017-01-26",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-monitoring",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-statistics-types_2013-09-25",
+        "revision": "2013-09-25",
+        "schema": "/rests/modules/opendaylight-statistics-types?revision=2013-09-25",
+        "namespace": "urn:opendaylight:model:statistics:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-switch-connection-config_2016-05-06",
+        "revision": "2016-05-06",
+        "schema": "/rests/modules/openflow-switch-connection-config?revision=2016-05-06",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:switch:connection:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-yang-library_2019-01-04",
+        "revision": "2019-01-04",
+        "schema": "/rests/modules/ietf-yang-library?revision=2019-01-04",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-library",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflowplugin-experimenter-types_2015-10-20",
+        "revision": "2015-10-20",
+        "schema": "/rests/modules/openflowplugin-experimenter-types?revision=2015-10-20",
+        "namespace": "urn:opendaylight:openflowplugin:experimenter:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-ip_2018-02-22",
+        "revision": "2018-02-22",
+        "schema": "/rests/modules/ietf-ip?revision=2018-02-22",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-ip",
+        "conformance-type": "import",
+        "feature": [
+          "ipv6-privacy-autoconf",
+          "ipv4-non-contiguous-netmasks"
+        ]
+      },
+      {
+        "name": "ietf-tcp-client_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-tcp-client?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-tcp-client",
+        "conformance-type": "import",
+        "feature": [
+          "tcp-client-keepalives",
+          "local-binding-supported"
+        ]
+      },
+      {
+        "name": "node-config_2014-10-15",
+        "revision": "2014-10-15",
+        "schema": "/rests/modules/node-config?revision=2014-10-15",
+        "namespace": "urn:opendaylight:module:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-restconf_2017-01-26",
+        "revision": "2017-01-26",
+        "schema": "/rests/modules/ietf-restconf?revision=2017-01-26",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-datastores_2018-02-14",
+        "revision": "2018-02-14",
+        "schema": "/rests/modules/ietf-datastores?revision=2018-02-14",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-datastores",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-yang-patch_2017-02-22",
+        "revision": "2017-02-22",
+        "schema": "/rests/modules/ietf-yang-patch?revision=2017-02-22",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-patch",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-group_2013-09-18",
+        "revision": "2013-09-18",
+        "schema": "/rests/modules/sal-group?revision=2013-09-18",
+        "namespace": "urn:opendaylight:group:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-codegen-extensions_2024-06-27",
+        "revision": "2024-06-27",
+        "schema": "/rests/modules/odl-codegen-extensions?revision=2024-06-27",
+        "namespace": "urn:opendaylight:yang:extension:codegen",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-meter_2013-09-18",
+        "revision": "2013-09-18",
+        "schema": "/rests/modules/sal-meter?revision=2013-09-18",
+        "namespace": "urn:opendaylight:meter:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-interfaces_2018-02-20",
+        "revision": "2018-02-20",
+        "schema": "/rests/modules/ietf-interfaces?revision=2018-02-20",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-interfaces",
+        "conformance-type": "import",
+        "feature": [
+          "pre-provisioning",
+          "arbitrary-names",
+          "if-mib"
+        ]
+      },
+      {
+        "name": "opendaylight-l2-types_2013-08-27",
+        "revision": "2013-08-27",
+        "schema": "/rests/modules/opendaylight-l2-types?revision=2013-08-27",
+        "namespace": "urn:opendaylight:l2:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-flow-types_2013-10-26",
+        "revision": "2013-10-26",
+        "schema": "/rests/modules/opendaylight-flow-types?revision=2013-10-26",
+        "namespace": "urn:opendaylight:flow:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "lldp-speaker-config_2016-05-12",
+        "revision": "2016-05-12",
+        "schema": "/rests/modules/lldp-speaker-config?revision=2016-05-12",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:applications:lldp-speaker:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "aaa-cert_2015-11-26",
+        "revision": "2015-11-26",
+        "schema": "/rests/modules/aaa-cert?revision=2015-11-26",
+        "namespace": "urn:opendaylight:yang:aaa:cert",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-action_2015-02-03",
+        "revision": "2015-02-03",
+        "schema": "/rests/modules/openflow-action?revision=2015-02-03",
+        "namespace": "urn:opendaylight:openflow:common:action",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-approved-extensions_2016-08-02",
+        "revision": "2016-08-02",
+        "schema": "/rests/modules/openflow-approved-extensions?revision=2016-08-02",
+        "namespace": "urn:opendaylight:openflow:approved:extensions",
+        "conformance-type": "import"
+      },
+      {
+        "name": "nc-notifications_2008-07-14",
+        "revision": "2008-07-14",
+        "schema": "/rests/modules/nc-notifications?revision=2008-07-14",
+        "namespace": "urn:ietf:params:xml:ns:netmod:notification",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-netconf-nmda_2019-01-07",
+        "revision": "2019-01-07",
+        "schema": "/rests/modules/ietf-netconf-nmda?revision=2019-01-07",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-nmda",
+        "conformance-type": "import",
+        "feature": [
+          "with-defaults",
+          "origin"
+        ]
+      },
+      {
+        "name": "ietf-tcp-common_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-tcp-common?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-tcp-common",
+        "conformance-type": "import",
+        "feature": [
+          "keepalives-supported"
+        ]
+      },
+      {
+        "name": "network-topology_2013-10-21",
+        "revision": "2013-10-21",
+        "schema": "/rests/modules/network-topology?revision=2013-10-21",
+        "namespace": "urn:TBD:params:xml:ns:yang:network-topology",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflowplugin-extension-nicira-action_2014-07-14",
+        "revision": "2014-07-14",
+        "schema": "/rests/modules/openflowplugin-extension-nicira-action?revision=2014-07-14",
+        "namespace": "urn:opendaylight:openflowplugin:extension:nicira:action",
+        "conformance-type": "import"
+      },
+      {
+        "name": "aaa-encrypt-service-config_2024-02-02",
+        "revision": "2024-02-02",
+        "schema": "/rests/modules/aaa-encrypt-service-config?revision=2024-02-02",
+        "namespace": "config:aaa:authn:encrypt:service:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-instruction_2013-07-31",
+        "revision": "2013-07-31",
+        "schema": "/rests/modules/openflow-instruction?revision=2013-07-31",
+        "namespace": "urn:opendaylight:openflow:common:instruction",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-tls-client_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-tls-client?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-client",
+        "conformance-type": "import",
+        "feature": [
+          "client-ident-x509-cert",
+          "server-auth-x509-cert"
+        ]
+      },
+      {
+        "name": "reconciliation_2018-02-27",
+        "revision": "2018-02-27",
+        "schema": "/rests/modules/reconciliation?revision=2018-02-27",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:reconciliation:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-group-statistics_2013-11-11",
+        "revision": "2013-11-11",
+        "schema": "/rests/modules/opendaylight-group-statistics?revision=2013-11-11",
+        "namespace": "urn:opendaylight:group:statistics",
+        "conformance-type": "import"
+      },
+      {
+        "name": "cluster-admin_2025-01-31",
+        "revision": "2025-01-31",
+        "schema": "/rests/modules/cluster-admin?revision=2025-01-31",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:controller:md:sal:cluster:admin",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-flow-statistics_2013-08-19",
+        "revision": "2013-08-19",
+        "schema": "/rests/modules/opendaylight-flow-statistics?revision=2013-08-19",
+        "namespace": "urn:opendaylight:flow:statistics",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-table-types_2013-10-26",
+        "revision": "2013-10-26",
+        "schema": "/rests/modules/opendaylight-table-types?revision=2013-10-26",
+        "namespace": "urn:opendaylight:table:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "forwarding-rules-manager-config_2016-05-11",
+        "revision": "2016-05-11",
+        "schema": "/rests/modules/forwarding-rules-manager-config?revision=2016-05-11",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:forwardingrules-manager:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-srm-types_2018-06-26",
+        "revision": "2018-06-26",
+        "schema": "/rests/modules/odl-srm-types?revision=2018-06-26",
+        "namespace": "urn:opendaylight:serviceutils:srm:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-x509-cert-to-name_2014-12-10",
+        "revision": "2014-12-10",
+        "schema": "/rests/modules/ietf-x509-cert-to-name?revision=2014-12-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-x509-cert-to-name",
+        "conformance-type": "import"
+      },
+      {
+        "name": "flow-node-inventory_2013-08-19",
+        "revision": "2013-08-19",
+        "schema": "/rests/modules/flow-node-inventory?revision=2013-08-19",
+        "namespace": "urn:opendaylight:flow:inventory",
+        "conformance-type": "import"
+      },
+      {
+        "name": "flow-errors_2013-11-16",
+        "revision": "2013-11-16",
+        "schema": "/rests/modules/flow-errors?revision=2013-11-16",
+        "namespace": "urn:opendaylight:flow:errors",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-netconf_2011-06-01",
+        "revision": "2011-06-01",
+        "schema": "/rests/modules/ietf-netconf?revision=2011-06-01",
+        "namespace": "urn:ietf:params:xml:ns:netconf:base:1.0",
+        "conformance-type": "import",
+        "feature": [
+          "xpath",
+          "url",
+          "rollback-on-error",
+          "validate",
+          "startup",
+          "confirmed-commit",
+          "candidate",
+          "writable-running"
+        ]
+      },
+      {
+        "name": "iana-ssh-public-key-algs_2024-10-16",
+        "revision": "2024-10-16",
+        "schema": "/rests/modules/iana-ssh-public-key-algs?revision=2024-10-16",
+        "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-public-key-algs",
+        "conformance-type": "import"
+      },
+      {
+        "name": "aaa-cert-mdsal_2016-03-21",
+        "revision": "2016-03-21",
+        "schema": "/rests/modules/aaa-cert-mdsal?revision=2016-03-21",
+        "namespace": "urn:opendaylight:yang:aaa:cert:mdsal",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-device-notification_2024-02-18",
+        "revision": "2024-02-18",
+        "schema": "/rests/modules/odl-device-notification?revision=2024-02-18",
+        "namespace": "urn:opendaylight:device:notification",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-origin_2018-02-14",
+        "revision": "2018-02-14",
+        "schema": "/rests/modules/ietf-origin?revision=2018-02-14",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-origin",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-augments_2015-02-25",
+        "revision": "2015-02-25",
+        "schema": "/rests/modules/openflow-augments?revision=2015-02-25",
+        "namespace": "urn:opendaylight:openflow:augments",
+        "conformance-type": "import"
+      },
+      {
+        "name": "iana-ssh-encryption-algs_2024-10-16",
+        "revision": "2024-10-16",
+        "schema": "/rests/modules/iana-ssh-encryption-algs?revision=2024-10-16",
+        "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-encryption-algs",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-truststore_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-truststore?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-truststore",
+        "conformance-type": "import",
+        "feature": [
+          "inline-definitions-supported"
+        ]
+      },
+      {
+        "name": "distributed-datastore-provider_2025-01-30",
+        "revision": "2025-01-30",
+        "schema": "/rests/modules/distributed-datastore-provider?revision=2025-01-30",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:controller:config:distributed-datastore-provider",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-group-types_2013-10-18",
+        "revision": "2013-10-18",
+        "schema": "/rests/modules/opendaylight-group-types?revision=2013-10-18",
+        "namespace": "urn:opendaylight:group:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-remote-augment_2023-11-03",
+        "revision": "2023-11-03",
+        "schema": "/rests/modules/sal-remote-augment?revision=2023-11-03",
+        "namespace": "urn:sal:restconf:event:subscription",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-ipv6-arbitrary-bitmask-fields_2016-02-24",
+        "revision": "2016-02-24",
+        "schema": "/rests/modules/opendaylight-ipv6-arbitrary-bitmask-fields?revision=2016-02-24",
+        "namespace": "urn:opendaylight:opendaylight-ipv6-arbitrary-bitmask-fields",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-flows-batch_2016-03-14",
+        "revision": "2016-03-14",
+        "schema": "/rests/modules/sal-flows-batch?revision=2016-03-14",
+        "namespace": "urn:opendaylight:flows:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-tls-common_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-tls-common?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-common",
+        "conformance-type": "import",
+        "feature": [
+          "hello-params",
+          "tls12",
+          "tls13"
+        ]
+      },
+      {
+        "name": "openflow-types_2013-07-31",
+        "revision": "2013-07-31",
+        "schema": "/rests/modules/openflow-types?revision=2013-07-31",
+        "namespace": "urn:opendaylight:openflow:common:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-netconf-with-defaults_2011-06-01",
+        "revision": "2011-06-01",
+        "schema": "/rests/modules/ietf-netconf-with-defaults?revision=2011-06-01",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-with-defaults",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-srm-ops_2018-06-26",
+        "revision": "2018-06-26",
+        "schema": "/rests/modules/odl-srm-ops?revision=2018-06-26",
+        "namespace": "urn:opendaylight:serviceutils:srm:ops",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-general-entity_2015-09-30",
+        "revision": "2015-09-30",
+        "schema": "/rests/modules/odl-general-entity?revision=2015-09-30",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:mdsal:core:general-entity",
+        "conformance-type": "import"
+      },
+      {
+        "name": "iana-ssh-key-exchange-algs_2024-10-16",
+        "revision": "2024-10-16",
+        "schema": "/rests/modules/iana-ssh-key-exchange-algs?revision=2024-10-16",
+        "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-key-exchange-algs",
+        "conformance-type": "import"
+      },
+      {
+        "name": "node-ssl-connection-error_2019-07-23",
+        "revision": "2019-07-23",
+        "schema": "/rests/modules/node-ssl-connection-error?revision=2019-07-23",
+        "namespace": "urn:opendaylight:node-ssl-connection-error:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-protocol_2013-07-31",
+        "revision": "2013-07-31",
+        "schema": "/rests/modules/openflow-protocol?revision=2013-07-31",
+        "namespace": "urn:opendaylight:openflow:protocol",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-udp-server_2025-12-16",
+        "revision": "2025-12-16",
+        "schema": "/rests/modules/ietf-udp-server?revision=2025-12-16",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-udp-server",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-keystore_2024-10-10",
+        "revision": "2024-10-10",
+        "schema": "/rests/modules/ietf-keystore?revision=2024-10-10",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-keystore",
+        "conformance-type": "import",
+        "feature": [
+          "asymmetric-keys",
+          "inline-definitions-supported"
+        ]
+      },
+      {
+        "name": "aaa_2016-12-14",
+        "revision": "2016-12-14",
+        "schema": "/rests/modules/aaa?revision=2016-12-14",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:aaa",
+        "conformance-type": "import"
+      },
+      {
+        "name": "aaa-cert-rpc_2015-12-15",
+        "revision": "2015-12-15",
+        "schema": "/rests/modules/aaa-cert-rpc?revision=2015-12-15",
+        "namespace": "urn:opendaylight:yang:aaa:cert:rpc",
+        "conformance-type": "import"
+      },
+      {
+        "name": "system-notifications_2013-09-27",
+        "revision": "2013-09-27",
+        "schema": "/rests/modules/system-notifications?revision=2013-09-27",
+        "namespace": "urn:opendaylight:openflow:system",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-flat-batch_2016-03-21",
+        "revision": "2016-03-21",
+        "schema": "/rests/modules/sal-flat-batch?revision=2016-03-21",
+        "namespace": "urn:opendaylight:flat-batch:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "notifications_2008-07-14",
+        "revision": "2008-07-14",
+        "schema": "/rests/modules/notifications?revision=2008-07-14",
+        "namespace": "urn:ietf:params:xml:ns:netconf:notification:1.0",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-remote_2014-01-14",
+        "revision": "2014-01-14",
+        "schema": "/rests/modules/sal-remote?revision=2014-01-14",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:controller:md:sal:remote",
+        "conformance-type": "import"
+      },
+      {
+        "name": "yang-ext_2013-07-09",
+        "revision": "2013-07-09",
+        "schema": "/rests/modules/yang-ext?revision=2013-07-09",
+        "namespace": "urn:opendaylight:yang:extension:yang-ext",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-multipart-types_2017-01-12",
+        "revision": "2017-01-12",
+        "schema": "/rests/modules/opendaylight-multipart-types?revision=2017-01-12",
+        "namespace": "urn:opendaylight:multipart:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-inventory_2013-08-19",
+        "revision": "2013-08-19",
+        "schema": "/rests/modules/opendaylight-inventory?revision=2013-08-19",
+        "namespace": "urn:opendaylight:inventory",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-queue_2015-03-05",
+        "revision": "2015-03-05",
+        "schema": "/rests/modules/sal-queue?revision=2015-03-05",
+        "namespace": "urn:opendaylight:queue:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-groups-batch_2016-03-15",
+        "revision": "2016-03-15",
+        "schema": "/rests/modules/sal-groups-batch?revision=2016-03-15",
+        "namespace": "urn:opendaylight:groups:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "arbitrator-reconcile_2018-02-27",
+        "revision": "2018-02-27",
+        "schema": "/rests/modules/arbitrator-reconcile?revision=2018-02-27",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:arbitrator-reconcile:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-yang-metadata_2016-08-05",
+        "revision": "2016-08-05",
+        "schema": "/rests/modules/ietf-yang-metadata?revision=2016-08-05",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-metadata",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-arbitrary-bitmask-fields_2016-01-30",
+        "revision": "2016-01-30",
+        "schema": "/rests/modules/opendaylight-arbitrary-bitmask-fields?revision=2016-01-30",
+        "namespace": "urn:opendaylight:arbitrary:bitmask:fields",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-udp-client_2025-12-16",
+        "revision": "2025-12-16",
+        "schema": "/rests/modules/ietf-udp-client?revision=2025-12-16",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-udp-client",
+        "conformance-type": "import",
+        "feature": [
+          "local-binding"
+        ]
+      },
+      {
+        "name": "opendaylight-meter-types_2013-09-18",
+        "revision": "2013-09-18",
+        "schema": "/rests/modules/opendaylight-meter-types?revision=2013-09-18",
+        "namespace": "urn:opendaylight:meter:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-action-types_2013-11-12",
+        "revision": "2013-11-12",
+        "schema": "/rests/modules/opendaylight-action-types?revision=2013-11-12",
+        "namespace": "urn:opendaylight:action:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-role_2015-07-27",
+        "revision": "2015-07-27",
+        "schema": "/rests/modules/sal-role?revision=2015-07-27",
+        "namespace": "urn:opendaylight:role:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-provider-config_2016-05-10",
+        "revision": "2016-05-10",
+        "schema": "/rests/modules/openflow-provider-config?revision=2016-05-10",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:provider:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-serviceutils-upgrade_2018-07-02",
+        "revision": "2018-07-02",
+        "schema": "/rests/modules/odl-serviceutils-upgrade?revision=2018-07-02",
+        "namespace": "urn:opendaylight:serviceutils:upgrade",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-match-types_2013-10-26",
+        "revision": "2013-10-26",
+        "schema": "/rests/modules/opendaylight-match-types?revision=2013-10-26",
+        "namespace": "urn:opendaylight:model:match:types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-restconf-server_2024-08-14",
+        "revision": "2024-08-14",
+        "schema": "/rests/modules/ietf-restconf-server?revision=2024-08-14",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-server",
+        "conformance-type": "import",
+        "feature": [
+          "https-listen",
+          "http-listen"
+        ]
+      },
+      {
+        "name": "reconciliation-result-state_2017-07-13",
+        "revision": "2017-07-13",
+        "schema": "/rests/modules/reconciliation-result-state?revision=2017-07-13",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:rf:state",
+        "conformance-type": "import"
+      },
+      {
+        "name": "onf-extensions_2017-01-24",
+        "revision": "2017-01-24",
+        "schema": "/rests/modules/onf-extensions?revision=2017-01-24",
+        "namespace": "urn:opendaylight:openflowplugin:extension:onf",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-table_2013-10-26",
+        "revision": "2013-10-26",
+        "schema": "/rests/modules/sal-table?revision=2013-10-26",
+        "namespace": "urn:opendaylight:table:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "iana-http-versions_2026-02-04",
+        "revision": "2026-02-04",
+        "schema": "/rests/modules/iana-http-versions?revision=2026-02-04",
+        "namespace": "urn:ietf:params:xml:ns:yang:iana-http-versions",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-direct-statistics_2016-05-11",
+        "revision": "2016-05-11",
+        "schema": "/rests/modules/opendaylight-direct-statistics?revision=2016-05-11",
+        "namespace": "urn:opendaylight:direct:statistics",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-port-types_2013-09-25",
+        "revision": "2013-09-25",
+        "schema": "/rests/modules/opendaylight-port-types?revision=2013-09-25",
+        "namespace": "urn:opendaylight:flow:types:port",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-async-config_2017-06-19",
+        "revision": "2017-06-19",
+        "schema": "/rests/modules/sal-async-config?revision=2017-06-19",
+        "namespace": "urn:opendaylight:async-config:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "aaa-password-service-config_2017-06-19",
+        "revision": "2017-06-19",
+        "schema": "/rests/modules/aaa-password-service-config?revision=2017-06-19",
+        "namespace": "urn:opendaylight:aaa:password:service:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-yang-types_2013-07-15",
+        "revision": "2013-07-15",
+        "schema": "/rests/modules/ietf-yang-types?revision=2013-07-15",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+        "conformance-type": "import"
+      },
+      {
+        "name": "opendaylight-queue-statistics_2013-12-16",
+        "revision": "2013-12-16",
+        "schema": "/rests/modules/opendaylight-queue-statistics?revision=2013-12-16",
+        "namespace": "urn:opendaylight:queue:statistics",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-bundle_2017-01-24",
+        "revision": "2017-01-24",
+        "schema": "/rests/modules/sal-bundle?revision=2017-01-24",
+        "namespace": "urn:opendaylight:openflowplugin:extension:onf:bundle:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-restconf-subscribed-notifications_2019-11-17",
+        "revision": "2019-11-17",
+        "schema": "/rests/modules/ietf-restconf-subscribed-notifications?revision=2019-11-17",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-subscribed-notifications",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-meters-batch_2016-03-16",
+        "revision": "2016-03-16",
+        "schema": "/rests/modules/sal-meters-batch?revision=2016-03-16",
+        "namespace": "urn:opendaylight:meters:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-entity-owners",
+        "revision": "",
+        "schema": "/rests/modules/odl-entity-owners",
+        "namespace": "urn:opendaylight:params:xml:ns:yang:controller:entity-owners",
+        "conformance-type": "import"
+      },
+      {
+        "name": "sal-experimenter-mp-message_2015-10-20",
+        "revision": "2015-10-20",
+        "schema": "/rests/modules/sal-experimenter-mp-message?revision=2015-10-20",
+        "namespace": "urn:opendaylight:experimenter-mp-message:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "packet-processing_2013-07-09",
+        "revision": "2013-07-09",
+        "schema": "/rests/modules/packet-processing?revision=2013-07-09",
+        "namespace": "urn:opendaylight:packet:service",
+        "conformance-type": "import"
+      },
+      {
+        "name": "openflow-configuration_2014-06-30",
+        "revision": "2014-06-30",
+        "schema": "/rests/modules/openflow-configuration?revision=2014-06-30",
+        "namespace": "urn:opendaylight:openflow:config",
+        "conformance-type": "import"
+      },
+      {
+        "name": "odl-srm-rpcs_2018-06-26",
+        "revision": "2018-06-26",
+        "schema": "/rests/modules/odl-srm-rpcs?revision=2018-06-26",
+        "namespace": "urn:opendaylight:serviceutils:srm:rpc",
+        "conformance-type": "import"
+      },
+      {
+        "name": "ietf-netconf-acm_2018-02-14",
+        "revision": "2018-02-14",
+        "schema": "/rests/modules/ietf-netconf-acm?revision=2018-02-14",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-acm",
+        "conformance-type": "import"
+      },
+      {
+        "name": "iana-crypt-hash_2014-08-06",
+        "revision": "2014-08-06",
+        "schema": "/rests/modules/iana-crypt-hash?revision=2014-08-06",
+        "namespace": "urn:ietf:params:xml:ns:yang:iana-crypt-hash",
+        "conformance-type": "import",
+        "feature": [
+          "crypt-hash-sha-512",
+          "crypt-hash-sha-256",
+          "crypt-hash-md5"
+        ]
+      },
+      {
+        "name": "openflow-extensible-match_2015-02-25",
+        "revision": "2015-02-25",
+        "schema": "/rests/modules/openflow-extensible-match?revision=2015-02-25",
+        "namespace": "urn:opendaylight:openflow:oxm",
+        "conformance-type": "import"
+      }
+    ],
+    "module-set-id": "2"
+  },
+  "ietf-restconf-monitoring:restconf-state": {
+    "capabilities": {
+      "capability": [
+        "urn:ietf:params:restconf:capability:defaults:1.0?basic-mode=explicit",
+        "urn:ietf:params:restconf:capability:with-defaults:1.0",
+        "urn:opendaylight:params:restconf:capability:leaf-nodes-only:1.0",
+        "urn:opendaylight:params:restconf:capability:skip-notification-data:1.0",
+        "urn:opendaylight:params:restconf:capability:child-nodes-only:1.0",
+        "urn:ietf:params:restconf:capability:depth:1.0",
+        "urn:ietf:params:restconf:capability:filter:1.0",
+        "urn:opendaylight:params:restconf:capability:pretty-print:1.0",
+        "urn:ietf:params:restconf:capability:yang-patch:1.0",
+        "urn:opendaylight:params:restconf:capability:changed-leaf-nodes-only:1.0",
+        "urn:ietf:params:restconf:capability:fields:1.0",
+        "urn:ietf:params:restconf:capability:replay:1.0"
+      ]
+    }
+  },
+  "aaa-cert-mdsal:key-stores": {
+    "id": "KeyStores:1",
+    "ssl-data": [
+      {
+        "bundle-name": "opendaylight",
+        "tls-protocols": "",
+        "odl-keystore": {
+          "store-password": "ipPCtjS9WDqyj5WZt8xsc5dzDGxPk5yB4eGXg9HNFsKuVF39cyown2UsNog=",
+          "sign-alg": "SHA1WithRSAEncryption",
+          "validity": 365,
+          "alias": "controller",
+          "name": "ctl.jks",
+          "dname": "CN=ODL, OU=Dev, O=LinuxFoundation, L=QC Montreal, C=CA",
+          "keystoreFile": "ipPCtjS9WDqyj5WZt8xscybskPd/odPPs6fv60NwWe27GALqEJjKZl5ydhIKQGDEGHvlqWfTlPCH1Nx50P4me10kt/bPgcUZSnDuOU8BJwSVf0FfxIeI8iAauGX3flHShQYqjmLTWCZCSCIbzdPEM4q4WnbSRBAGv7nQkBYDQFe0Yx8cApYL4p+hJ79epNj8VVNOHbJeF1gDTQCLG1Ub2/EtCd6+oSQwGghawC0wBrN3eThzxvvaKvGesDUYwAmcg/nKBXCpgSOjjBe7VDjQqtX6K0JeSQygUxSkAVBF94/jAtukdNsSxD/XAOgUdu7D/SNMQjTl5/3uMQOAhRcktY93qHprSF/CSZe8143kqrJyQiHSBbSCHPLj1LYeUGIMMbyxjiE1OQGrpHyeYwwY6iG36LS4GBzIqf2E79kocNVOl2n9wxpvfh7kcLHsrLMS1Y6yyKEHmRYsBwUWO/t/9VOQfrU1xB8FpdbXCq9V9K1Ty1IyhyAMS3Q0qr1upKlAn3D8v5TH34es9q568TZ/5X1DnG/GBPP47tM9YV6BxoBRRSIkgQ21LL7stlIG4fB433EkMiKYYQIc5JPAEsnU4nXzyFrReAlJBGFBdssfTmOWVKQzhno6YwxbpMEHtgwU4TAEhdOGh6OUcefqgwVTu/qPu/wPtT38lMz1FkxmGA5RyadTg1zPZQAwq6aVqF18ExVjv7zYlF7F+va72HUOMfU8232VtvIgQAFyWIv8gi8qmb7f/53aOloh0gIu+gSBtlb7AEULEAFkCNsBzGh+Hn8w4vWuGjfn/wbrMp8ylrllKkluEg/gg7rLqHXEpMSj195YWyTFwjC0fjReg7aMYDVbAdw0GnKyJ1QOoX+xRuntF9PXu2knCQ6lNwI+HuLmhzzNKPyOUR/6brGOSqtIpc3gjK7z7oGCBnCM83Op9CqG042Q+0TFYHe518px6JFXjKrl7oXwNAv4Pvn0ptAiVekGpBugHHPpG6rwHtBneTFiST16eFAoDaH1u4uDO+wAN1YrYLi7A8UUvMC0B5hpLfcqSaGGFuEMcd7VucDjFJjsszJfJeVAadrAvcCLREDGPA/BUkpeKoOgkdIyxtm0xFSUSY0+RoEr32TNUi5QLhKNRCTLd0DRnQc97JNUvrJVch1M58qLCCPrjw5DHo+v3D7rXw3PzELMFYvmpEVUJ+JQLOaX7pclgpxgumtVToPDv+uL0cFkxGht+vw0H4hQf8+6gYLsbBZlXtpybXkZakKkIGvL1tRJRp63Npkn3DZ5747mWcq+e4zG448qJG4zxpKJlmNHoYTkgqd1xV/u6h7SG00GwggJ3QtEj7WDiRWDpQGgB3VMDUhWwbBz8i9hyruc4Y8qTbGEeA5nk7wm4EC+d7FWO7vvfYz9AQT/gUHTg89gO7CEFaXO8cR7Q/dKnlfIYD74HYRrNvSM1yRbT8dlUuMkLuGjGOoSFzvsOZ4HB8N75V3Zi88kG5J6mWlm1n1E4o/56ULiksdaFvXPVylT04Hjngral0LEZWrM5I07ciQ3KVjYGBvXd4wz5IHHt1l6K1LHPa5M4NYqfuAxGjtVxv+7tnjpRM2ZtgertS4b9NbLvIEPiIXeMAwTzQO03f08Qv0nzoCtQczb+xvwI1tltJf3qebXv7DjyGX4LUDSmm8hI/ClSxQU9bAeZYjisFYbpTP3Ct4U0H0BtPoU4nWxcYBXRH2cdrZXtfqzVoLKF9jjIZRjouQT9hBAHeYVFd899tiksgrCwO3MNpuEBfHO3ZGlq3nlhdux898bQBBmjGjbZHlO3iXV+8KrQlMh3w==",
+          "key-alg": "RSA",
+          "keysize": 1024
+        },
+        "cipher-suites": [
+          {
+            "suiteName": ""
+          }
+        ],
+        "trust-keystore": {
+          "keystoreFile": "ipPCtjS9WDqyj5WZt8xscybskPd/odPPs6fv6tbF+ESr+Fg22TOKAfsA21zezAL7RRxmt43AZy+KUL34B7ZNPQ==",
+          "store-password": "ipPCtjS9WDqyj5WZt8xsc4JTGygI1ZD01PGAnHP74cVmgQiHII5nBynkxp8=",
+          "name": "truststore.jks"
+        }
+      }
+    ]
+  },
+  "network-topology:network-topology": {
+    "topology": [
+      {
+        "topology-id": "flow:1",
+        "node": [
+          {
+            "node-id": "openflow:2251799813685248",
+            "opendaylight-topology-inventory:inventory-node-ref": "/opendaylight-inventory:nodes/node[id='openflow:2251799813685248']",
+            "termination-point": [
+              {
+                "tp-id": "openflow:2251799813685248:2",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:2251799813685248']/node-connector[id='openflow:2251799813685248:2']"
+              },
+              {
+                "tp-id": "openflow:2251799813685248:1",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:2251799813685248']/node-connector[id='openflow:2251799813685248:1']"
+              },
+              {
+                "tp-id": "openflow:2251799813685248:4",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:2251799813685248']/node-connector[id='openflow:2251799813685248:4']"
+              },
+              {
+                "tp-id": "openflow:2251799813685248:3",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:2251799813685248']/node-connector[id='openflow:2251799813685248:3']"
+              }
+            ]
+          },
+          {
+            "node-id": "openflow:1407374883553280",
+            "opendaylight-topology-inventory:inventory-node-ref": "/opendaylight-inventory:nodes/node[id='openflow:1407374883553280']",
+            "termination-point": [
+              {
+                "tp-id": "openflow:1407374883553280:2",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1407374883553280']/node-connector[id='openflow:1407374883553280:2']"
+              },
+              {
+                "tp-id": "openflow:1407374883553280:1",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1407374883553280']/node-connector[id='openflow:1407374883553280:1']"
+              },
+              {
+                "tp-id": "openflow:1407374883553280:3",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1407374883553280']/node-connector[id='openflow:1407374883553280:3']"
+              }
+            ]
+          },
+          {
+            "node-id": "openflow:1970324836974592",
+            "opendaylight-topology-inventory:inventory-node-ref": "/opendaylight-inventory:nodes/node[id='openflow:1970324836974592']",
+            "termination-point": [
+              {
+                "tp-id": "openflow:1970324836974592:5",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1970324836974592']/node-connector[id='openflow:1970324836974592:5']"
+              },
+              {
+                "tp-id": "openflow:1970324836974592:4",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1970324836974592']/node-connector[id='openflow:1970324836974592:4']"
+              },
+              {
+                "tp-id": "openflow:1970324836974592:6",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1970324836974592']/node-connector[id='openflow:1970324836974592:6']"
+              },
+              {
+                "tp-id": "openflow:1970324836974592:1",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1970324836974592']/node-connector[id='openflow:1970324836974592:1']"
+              },
+              {
+                "tp-id": "openflow:1970324836974592:3",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1970324836974592']/node-connector[id='openflow:1970324836974592:3']"
+              },
+              {
+                "tp-id": "openflow:1970324836974592:2",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1970324836974592']/node-connector[id='openflow:1970324836974592:2']"
+              }
+            ]
+          },
+          {
+            "node-id": "openflow:1688849860263936",
+            "opendaylight-topology-inventory:inventory-node-ref": "/opendaylight-inventory:nodes/node[id='openflow:1688849860263936']",
+            "termination-point": [
+              {
+                "tp-id": "openflow:1688849860263936:4",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1688849860263936']/node-connector[id='openflow:1688849860263936:4']"
+              },
+              {
+                "tp-id": "openflow:1688849860263936:5",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1688849860263936']/node-connector[id='openflow:1688849860263936:5']"
+              },
+              {
+                "tp-id": "openflow:1688849860263936:1",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1688849860263936']/node-connector[id='openflow:1688849860263936:1']"
+              },
+              {
+                "tp-id": "openflow:1688849860263936:2",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1688849860263936']/node-connector[id='openflow:1688849860263936:2']"
+              },
+              {
+                "tp-id": "openflow:1688849860263936:3",
+                "opendaylight-topology-inventory:inventory-node-connector-ref": "/opendaylight-inventory:nodes/node[id='openflow:1688849860263936']/node-connector[id='openflow:1688849860263936:3']"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "odl-serviceutils-upgrade:upgrade-config": {
+    "upgradeInProgress": false
+  },
+  "ietf-subscribed-notifications:streams": {
+    "stream": [
+      {
+        "name": "NETCONF",
+        "description": "Default XML encoded NETCONF stream"
+      }
+    ]
+  },
+  "aaa-encrypt-service-config:aaa-encrypt-service-config": {
+    "encrypt-type": "AES",
+    "encrypt-key-length": 128,
+    "password-length": 12,
+    "cipher-transforms": "AES/GCM/NoPadding",
+    "encrypt-key": "O6WHfy1C6fzx",
+    "encrypt-salt": "ipPCtjS9WDqyj5WZt8xscw==",
+    "auth-tag-length": 128,
+    "encrypt-method": "PBKDF2WithHmacSHA1",
+    "encrypt-iteration-count": 32768
+  },
+  "opendaylight-inventory:nodes": {
+    "node": [
+      {
+        "id": "openflow:1407374883553280",
+        "flow-node-inventory:table": [
+          {
+            "id": 0,
+            "flow": [
+              {
+                "id": "1001",
+                "table_id": 0,
+                "priority": 100,
+                "flow-name": "test-in-ether1-out-ether3",
+                "idle-timeout": 0,
+                "match": {
+                  "in-port": "openflow:1407374883553280:1"
+                },
+                "instructions": {
+                  "instruction": [
+                    {
+                      "order": 0,
+                      "apply-actions": {
+                        "action": [
+                          {
+                            "order": 0,
+                            "output-action": {
+                              "max-length": 65535,
+                              "output-node-connector": "3"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "hard-timeout": 0
+              }
+            ]
+          }
+        ],
+        "flow-node-inventory:snapshot-gathering-status-start": {
+          "begin": "2026-06-29T02:36:25.215Z"
+        },
+        "node-connector": [
+          {
+            "id": "openflow:1407374883553280:3",
+            "flow-node-inventory:port-number": 3,
+            "flow-node-inventory:hardware-address": "0c:b7:4c:57:00:02",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether3",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "67",
+                "received": "24"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "15453",
+                "received": "2616"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1407374883553280:2",
+            "flow-node-inventory:port-number": 2,
+            "flow-node-inventory:hardware-address": "0c:b7:4c:57:00:01",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether2",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "27",
+                "received": "2"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "3105",
+                "received": "128"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1407374883553280:1",
+            "flow-node-inventory:port-number": 1,
+            "flow-node-inventory:hardware-address": "0c:b7:4c:57:00:00",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether1",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "27",
+                "received": "142"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "3105",
+                "received": "42913"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          }
+        ]
+      },
+      {
+        "id": "openflow:2251799813685248",
+        "flow-node-inventory:table": [
+          {
+            "id": 0,
+            "flow": [
+              {
+                "id": "1002",
+                "table_id": 0,
+                "priority": 100,
+                "flow-name": "onos8-ether3-to-ether1",
+                "idle-timeout": 0,
+                "match": {
+                  "in-port": "openflow:2251799813685248:3"
+                },
+                "instructions": {
+                  "instruction": [
+                    {
+                      "order": 0,
+                      "apply-actions": {
+                        "action": [
+                          {
+                            "order": 0,
+                            "output-action": {
+                              "max-length": 65535,
+                              "output-node-connector": "1"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "hard-timeout": 0
+              },
+              {
+                "id": "1001",
+                "table_id": 0,
+                "priority": 100,
+                "flow-name": "onos8-ether1-to-ether3",
+                "idle-timeout": 0,
+                "match": {
+                  "in-port": "openflow:2251799813685248:1"
+                },
+                "instructions": {
+                  "instruction": [
+                    {
+                      "order": 0,
+                      "apply-actions": {
+                        "action": [
+                          {
+                            "order": 0,
+                            "output-action": {
+                              "max-length": 65535,
+                              "output-node-connector": "3"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "hard-timeout": 0
+              }
+            ]
+          }
+        ],
+        "flow-node-inventory:snapshot-gathering-status-start": {
+          "begin": "2026-06-29T02:38:13.183Z"
+        },
+        "node-connector": [
+          {
+            "id": "openflow:2251799813685248:4",
+            "flow-node-inventory:port-number": 4,
+            "flow-node-inventory:hardware-address": "0c:c9:20:87:00:03",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether4",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "20",
+                "received": "0"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "2300",
+                "received": "0"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:2251799813685248:3",
+            "flow-node-inventory:port-number": 3,
+            "flow-node-inventory:hardware-address": "0c:c9:20:87:00:02",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether3",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "52",
+                "received": "85"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "11843",
+                "received": "7920"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:2251799813685248:2",
+            "flow-node-inventory:port-number": 2,
+            "flow-node-inventory:hardware-address": "0c:c9:20:87:00:01",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether2",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "20",
+                "received": "189"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "2300",
+                "received": "57376"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:2251799813685248:1",
+            "flow-node-inventory:port-number": 1,
+            "flow-node-inventory:hardware-address": "0c:c9:20:87:00:00",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether1",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "32",
+                "received": "191"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "3368",
+                "received": "57337"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          }
+        ]
+      },
+      {
+        "id": "openflow:1970324836974592",
+        "flow-node-inventory:table": [
+          {
+            "id": 0
+          }
+        ],
+        "flow-node-inventory:snapshot-gathering-status-start": {
+          "begin": "2026-06-29T02:41:31.437Z"
+        },
+        "node-connector": [
+          {
+            "id": "openflow:1970324836974592:4",
+            "flow-node-inventory:port-number": 4,
+            "flow-node-inventory:hardware-address": "0c:94:74:0f:00:03",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether4",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "84",
+                "received": "0"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "9660",
+                "received": "0"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1970324836974592:5",
+            "flow-node-inventory:port-number": 5,
+            "flow-node-inventory:hardware-address": "0c:94:74:0f:00:04",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether5",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "84",
+                "received": "212"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "9660",
+                "received": "40395"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1970324836974592:6",
+            "flow-node-inventory:port-number": 6,
+            "flow-node-inventory:hardware-address": "0c:94:74:0f:00:05",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether6",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "84",
+                "received": "0"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "9660",
+                "received": "0"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1970324836974592:1",
+            "flow-node-inventory:port-number": 1,
+            "flow-node-inventory:hardware-address": "0c:94:74:0f:00:00",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether1",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "84",
+                "received": "265"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "9660",
+                "received": "81318"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1970324836974592:2",
+            "flow-node-inventory:port-number": 2,
+            "flow-node-inventory:hardware-address": "0c:94:74:0f:00:01",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether2",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "84",
+                "received": "262"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "9660",
+                "received": "80292"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1970324836974592:3",
+            "flow-node-inventory:port-number": 3,
+            "flow-node-inventory:hardware-address": "0c:94:74:0f:00:02",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether3",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "84",
+                "received": "39"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "9660",
+                "received": "4251"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          }
+        ]
+      },
+      {
+        "id": "openflow:1688849860263936",
+        "flow-node-inventory:table": [
+          {
+            "id": 0
+          }
+        ],
+        "flow-node-inventory:snapshot-gathering-status-start": {
+          "begin": "2026-06-29T02:38:02.267Z"
+        },
+        "node-connector": [
+          {
+            "id": "openflow:1688849860263936:2",
+            "flow-node-inventory:port-number": 2,
+            "flow-node-inventory:hardware-address": "0c:17:87:88:00:01",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether2",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "21",
+                "received": "197"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "2415",
+                "received": "60308"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1688849860263936:3",
+            "flow-node-inventory:port-number": 3,
+            "flow-node-inventory:hardware-address": "0c:17:87:88:00:02",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether3",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "21",
+                "received": "99"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "2415",
+                "received": "24903"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1688849860263936:1",
+            "flow-node-inventory:port-number": 1,
+            "flow-node-inventory:hardware-address": "0c:17:87:88:00:00",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether1",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "21",
+                "received": "186"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "2415",
+                "received": "56093"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1688849860263936:4",
+            "flow-node-inventory:port-number": 4,
+            "flow-node-inventory:hardware-address": "0c:17:87:88:00:03",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether4",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "21",
+                "received": "0"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "2415",
+                "received": "0"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          },
+          {
+            "id": "openflow:1688849860263936:5",
+            "flow-node-inventory:port-number": 5,
+            "flow-node-inventory:hardware-address": "0c:17:87:88:00:04",
+            "flow-node-inventory:peer-features": "",
+            "flow-node-inventory:name": "ether5",
+            "flow-node-inventory:current-feature": "",
+            "flow-node-inventory:supported": "",
+            "flow-node-inventory:advertised-features": "",
+            "flow-node-inventory:state": {
+              "live": false,
+              "blocked": false,
+              "link-down": false
+            },
+            "flow-node-inventory:configuration": "",
+            "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+              "receive-drops": "0",
+              "transmit-drops": "0",
+              "receive-frame-error": "18446744073709551615",
+              "collision-count": "18446744073709551615",
+              "packets": {
+                "transmitted": "21",
+                "received": "29"
+              },
+              "receive-over-run-error": "18446744073709551615",
+              "receive-errors": "18446744073709551615",
+              "transmit-errors": "18446744073709551615",
+              "bytes": {
+                "transmitted": "2415",
+                "received": "3552"
+              },
+              "receive-crc-error": "18446744073709551615"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "openflow-switch-connection-config:switch-connection-config": [
+    {
+      "instance-name": "openflow-switch-connection-provider-default-impl",
+      "group-add-mod-enabled": false,
+      "tls": {
+        "truststore-path-type": "PATH",
+        "keystore-path-type": "PATH",
+        "keystore-password": "opendaylight",
+        "truststore-type": "JKS",
+        "keystore": "configuration/ssl/ctl.jks",
+        "truststore": "configuration/ssl/truststore.jks",
+        "certificate-password": "opendaylight",
+        "keystore-type": "JKS",
+        "truststore-password": "opendaylight",
+        "cipher-suites": [
+          ""
+        ]
+      },
+      "port": 6653,
+      "transport-protocol": "TCP",
+      "channel-outbound-queue-size": 1024
+    },
+    {
+      "instance-name": "openflow-switch-connection-provider-legacy-impl",
+      "group-add-mod-enabled": false,
+      "tls": {
+        "truststore-path-type": "PATH",
+        "keystore-path-type": "PATH",
+        "keystore-password": "opendaylight",
+        "truststore-type": "JKS",
+        "keystore": "configuration/ssl/ctl.jks",
+        "truststore": "configuration/ssl/truststore.jks",
+        "certificate-password": "opendaylight",
+        "keystore-type": "JKS",
+        "truststore-password": "opendaylight",
+        "cipher-suites": [
+          ""
+        ]
+      },
+      "port": 6633,
+      "transport-protocol": "TCP",
+      "channel-outbound-queue-size": 1024
+    }
+  ],
+  "ietf-yang-library:yang-library": {
+    "schema": [
+      {
+        "name": "ODL_schema",
+        "module-set": [
+          "ODL_modules"
+        ]
+      }
+    ],
+    "datastore": [
+      {
+        "name": "ietf-datastores:operational",
+        "schema": "ODL_schema"
+      }
+    ],
+    "module-set": [
+      {
+        "name": "ODL_modules",
+        "module": [
+          {
+            "name": "opendaylight-direct-statistics_2016-05-11",
+            "namespace": "urn:opendaylight:direct:statistics",
+            "revision": "2016-05-11",
+            "location": [
+              "/rests/modules/opendaylight-direct-statistics?revision=2016-05-11"
+            ]
+          },
+          {
+            "name": "odl-entity-owners",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:controller:entity-owners",
+            "location": [
+              "/rests/modules/odl-entity-owners"
+            ]
+          },
+          {
+            "name": "aaa-cert_2015-11-26",
+            "namespace": "urn:opendaylight:yang:aaa:cert",
+            "revision": "2015-11-26",
+            "location": [
+              "/rests/modules/aaa-cert?revision=2015-11-26"
+            ]
+          },
+          {
+            "name": "nicira-match_2014-04-21",
+            "namespace": "urn:opendaylight:openflowjava:nx:match",
+            "revision": "2014-04-21",
+            "location": [
+              "/rests/modules/nicira-match?revision=2014-04-21"
+            ]
+          },
+          {
+            "name": "opendaylight-flow-statistics_2013-08-19",
+            "namespace": "urn:opendaylight:flow:statistics",
+            "revision": "2013-08-19",
+            "location": [
+              "/rests/modules/opendaylight-flow-statistics?revision=2013-08-19"
+            ]
+          },
+          {
+            "name": "flow-node-inventory_2013-08-19",
+            "namespace": "urn:opendaylight:flow:inventory",
+            "revision": "2013-08-19",
+            "location": [
+              "/rests/modules/flow-node-inventory?revision=2013-08-19"
+            ]
+          },
+          {
+            "name": "openflow-approved-extensions_2016-08-02",
+            "namespace": "urn:opendaylight:openflow:approved:extensions",
+            "revision": "2016-08-02",
+            "location": [
+              "/rests/modules/openflow-approved-extensions?revision=2016-08-02"
+            ]
+          },
+          {
+            "name": "opendaylight-port-types_2013-09-25",
+            "namespace": "urn:opendaylight:flow:types:port",
+            "revision": "2013-09-25",
+            "location": [
+              "/rests/modules/opendaylight-port-types?revision=2013-09-25"
+            ]
+          },
+          {
+            "name": "topology-lldp-discovery-config_2016-05-11",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:topology-lldp-discovery:config",
+            "revision": "2016-05-11",
+            "location": [
+              "/rests/modules/topology-lldp-discovery-config?revision=2016-05-11"
+            ]
+          },
+          {
+            "name": "ietf-yang-metadata_2016-08-05",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-metadata",
+            "revision": "2016-08-05",
+            "location": [
+              "/rests/modules/ietf-yang-metadata?revision=2016-08-05"
+            ]
+          },
+          {
+            "name": "openflow-instruction_2013-07-31",
+            "namespace": "urn:opendaylight:openflow:common:instruction",
+            "revision": "2013-07-31",
+            "location": [
+              "/rests/modules/openflow-instruction?revision=2013-07-31"
+            ]
+          },
+          {
+            "name": "sal-flat-batch_2016-03-21",
+            "namespace": "urn:opendaylight:flat-batch:service",
+            "revision": "2016-03-21",
+            "location": [
+              "/rests/modules/sal-flat-batch?revision=2016-03-21"
+            ]
+          },
+          {
+            "name": "sal-meter_2013-09-18",
+            "namespace": "urn:opendaylight:meter:service",
+            "revision": "2013-09-18",
+            "location": [
+              "/rests/modules/sal-meter?revision=2013-09-18"
+            ]
+          },
+          {
+            "name": "ietf-truststore_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-truststore",
+            "revision": "2024-10-10",
+            "feature": [
+              "inline-definitions-supported"
+            ],
+            "location": [
+              "/rests/modules/ietf-truststore?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "ietf-ssh-server_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-server",
+            "revision": "2024-10-10",
+            "feature": [
+              "local-users-supported",
+              "local-user-auth-publickey",
+              "local-user-auth-password",
+              "ssh-server-keepalives",
+              "local-user-auth-hostbased"
+            ],
+            "location": [
+              "/rests/modules/ietf-ssh-server?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "openflow-extensible-match_2015-02-25",
+            "namespace": "urn:opendaylight:openflow:oxm",
+            "revision": "2015-02-25",
+            "location": [
+              "/rests/modules/openflow-extensible-match?revision=2015-02-25"
+            ]
+          },
+          {
+            "name": "sal-flows-batch_2016-03-14",
+            "namespace": "urn:opendaylight:flows:service",
+            "revision": "2016-03-14",
+            "location": [
+              "/rests/modules/sal-flows-batch?revision=2016-03-14"
+            ]
+          },
+          {
+            "name": "openflow-protocol_2013-07-31",
+            "namespace": "urn:opendaylight:openflow:protocol",
+            "revision": "2013-07-31",
+            "location": [
+              "/rests/modules/openflow-protocol?revision=2013-07-31"
+            ]
+          },
+          {
+            "name": "frm-reconciliation_2018-02-27",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:frm-reconciliation:service",
+            "revision": "2018-02-27",
+            "location": [
+              "/rests/modules/frm-reconciliation?revision=2018-02-27"
+            ]
+          },
+          {
+            "name": "reconciliation-result-state_2017-07-13",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:rf:state",
+            "revision": "2017-07-13",
+            "location": [
+              "/rests/modules/reconciliation-result-state?revision=2017-07-13"
+            ]
+          },
+          {
+            "name": "flow-capable-transaction_2015-03-04",
+            "namespace": "urn:opendaylight:flow:transaction",
+            "revision": "2015-03-04",
+            "location": [
+              "/rests/modules/flow-capable-transaction?revision=2015-03-04"
+            ]
+          },
+          {
+            "name": "openflowplugin-experimenter-types_2015-10-20",
+            "namespace": "urn:opendaylight:openflowplugin:experimenter:types",
+            "revision": "2015-10-20",
+            "location": [
+              "/rests/modules/openflowplugin-experimenter-types?revision=2015-10-20"
+            ]
+          },
+          {
+            "name": "ietf-restconf_2017-01-26",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf",
+            "revision": "2017-01-26",
+            "location": [
+              "/rests/modules/ietf-restconf?revision=2017-01-26"
+            ]
+          },
+          {
+            "name": "sal-groups-batch_2016-03-15",
+            "namespace": "urn:opendaylight:groups:service",
+            "revision": "2016-03-15",
+            "location": [
+              "/rests/modules/sal-groups-batch?revision=2016-03-15"
+            ]
+          },
+          {
+            "name": "sal-remote_2014-01-14",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:controller:md:sal:remote",
+            "revision": "2014-01-14",
+            "location": [
+              "/rests/modules/sal-remote?revision=2014-01-14"
+            ]
+          },
+          {
+            "name": "odl-general-entity_2015-09-30",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:mdsal:core:general-entity",
+            "revision": "2015-09-30",
+            "location": [
+              "/rests/modules/odl-general-entity?revision=2015-09-30"
+            ]
+          },
+          {
+            "name": "aaa-cert-mdsal_2016-03-21",
+            "namespace": "urn:opendaylight:yang:aaa:cert:mdsal",
+            "revision": "2016-03-21",
+            "location": [
+              "/rests/modules/aaa-cert-mdsal?revision=2016-03-21"
+            ]
+          },
+          {
+            "name": "ietf-netconf-with-defaults_2011-06-01",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-with-defaults",
+            "revision": "2011-06-01",
+            "location": [
+              "/rests/modules/ietf-netconf-with-defaults?revision=2011-06-01"
+            ]
+          },
+          {
+            "name": "opendaylight-queue-statistics_2013-12-16",
+            "namespace": "urn:opendaylight:queue:statistics",
+            "revision": "2013-12-16",
+            "location": [
+              "/rests/modules/opendaylight-queue-statistics?revision=2013-12-16"
+            ]
+          },
+          {
+            "name": "ietf-ssh-common_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-common",
+            "revision": "2024-10-10",
+            "feature": [
+              "ssh-x509-certs",
+              "transport-params"
+            ],
+            "location": [
+              "/rests/modules/ietf-ssh-common?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "odl-device-notification_2024-02-18",
+            "namespace": "urn:opendaylight:device:notification",
+            "revision": "2024-02-18",
+            "location": [
+              "/rests/modules/odl-device-notification?revision=2024-02-18"
+            ]
+          },
+          {
+            "name": "iana-ssh-key-exchange-algs_2024-10-16",
+            "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-key-exchange-algs",
+            "revision": "2024-10-16",
+            "location": [
+              "/rests/modules/iana-ssh-key-exchange-algs?revision=2024-10-16"
+            ]
+          },
+          {
+            "name": "ietf-keystore_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-keystore",
+            "revision": "2024-10-10",
+            "feature": [
+              "asymmetric-keys",
+              "inline-definitions-supported"
+            ],
+            "location": [
+              "/rests/modules/ietf-keystore?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "iana-ssh-mac-algs_2024-10-16",
+            "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-mac-algs",
+            "revision": "2024-10-16",
+            "location": [
+              "/rests/modules/iana-ssh-mac-algs?revision=2024-10-16"
+            ]
+          },
+          {
+            "name": "openflow-augments_2015-02-25",
+            "namespace": "urn:opendaylight:openflow:augments",
+            "revision": "2015-02-25",
+            "location": [
+              "/rests/modules/openflow-augments?revision=2015-02-25"
+            ]
+          },
+          {
+            "name": "ietf-tls-common_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-common",
+            "revision": "2024-10-10",
+            "feature": [
+              "hello-params",
+              "tls12",
+              "tls13"
+            ],
+            "location": [
+              "/rests/modules/ietf-tls-common?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "lldp-speaker-config_2016-05-12",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:applications:lldp-speaker:config",
+            "revision": "2016-05-12",
+            "location": [
+              "/rests/modules/lldp-speaker-config?revision=2016-05-12"
+            ]
+          },
+          {
+            "name": "odl-srm-types_2018-06-26",
+            "namespace": "urn:opendaylight:serviceutils:srm:types",
+            "revision": "2018-06-26",
+            "location": [
+              "/rests/modules/odl-srm-types?revision=2018-06-26"
+            ]
+          },
+          {
+            "name": "sal-bundle_2017-01-24",
+            "namespace": "urn:opendaylight:openflowplugin:extension:onf:bundle:service",
+            "revision": "2017-01-24",
+            "location": [
+              "/rests/modules/sal-bundle?revision=2017-01-24"
+            ]
+          },
+          {
+            "name": "arbitrator-reconcile_2018-02-27",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:arbitrator-reconcile:service",
+            "revision": "2018-02-27",
+            "location": [
+              "/rests/modules/arbitrator-reconcile?revision=2018-02-27"
+            ]
+          },
+          {
+            "name": "ietf-network-instance_2019-01-21",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-network-instance",
+            "revision": "2019-01-21",
+            "location": [
+              "/rests/modules/ietf-network-instance?revision=2019-01-21"
+            ]
+          },
+          {
+            "name": "sal-table_2013-10-26",
+            "namespace": "urn:opendaylight:table:service",
+            "revision": "2013-10-26",
+            "location": [
+              "/rests/modules/sal-table?revision=2013-10-26"
+            ]
+          },
+          {
+            "name": "odl-srm-ops_2018-06-26",
+            "namespace": "urn:opendaylight:serviceutils:srm:ops",
+            "revision": "2018-06-26",
+            "location": [
+              "/rests/modules/odl-srm-ops?revision=2018-06-26"
+            ]
+          },
+          {
+            "name": "flow-errors_2013-11-16",
+            "namespace": "urn:opendaylight:flow:errors",
+            "revision": "2013-11-16",
+            "location": [
+              "/rests/modules/flow-errors?revision=2013-11-16"
+            ]
+          },
+          {
+            "name": "ietf-tcp-client_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-tcp-client",
+            "revision": "2024-10-10",
+            "feature": [
+              "tcp-client-keepalives",
+              "local-binding-supported"
+            ],
+            "location": [
+              "/rests/modules/ietf-tcp-client?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "openflowplugin-extension-general_2014-07-14",
+            "namespace": "urn:opendaylight:openflowplugin:extension:general",
+            "revision": "2014-07-14",
+            "location": [
+              "/rests/modules/openflowplugin-extension-general?revision=2014-07-14"
+            ]
+          },
+          {
+            "name": "node-config_2014-10-15",
+            "namespace": "urn:opendaylight:module:config",
+            "revision": "2014-10-15",
+            "location": [
+              "/rests/modules/node-config?revision=2014-10-15"
+            ]
+          },
+          {
+            "name": "onf-extensions_2017-01-24",
+            "namespace": "urn:opendaylight:openflowplugin:extension:onf",
+            "revision": "2017-01-24",
+            "location": [
+              "/rests/modules/onf-extensions?revision=2017-01-24"
+            ]
+          },
+          {
+            "name": "network-topology_2013-10-21",
+            "namespace": "urn:TBD:params:xml:ns:yang:network-topology",
+            "revision": "2013-10-21",
+            "location": [
+              "/rests/modules/network-topology?revision=2013-10-21"
+            ]
+          },
+          {
+            "name": "node-ssl-connection-error_2019-07-23",
+            "namespace": "urn:opendaylight:node-ssl-connection-error:service",
+            "revision": "2019-07-23",
+            "location": [
+              "/rests/modules/node-ssl-connection-error?revision=2019-07-23"
+            ]
+          },
+          {
+            "name": "cluster-admin_2025-01-31",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:controller:md:sal:cluster:admin",
+            "revision": "2025-01-31",
+            "location": [
+              "/rests/modules/cluster-admin?revision=2025-01-31"
+            ]
+          },
+          {
+            "name": "ietf-http-server_2025-11-11",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-http-server",
+            "revision": "2025-11-11",
+            "feature": [
+              "local-users-supported",
+              "basic-auth",
+              "tcp-supported",
+              "tls-supported",
+              "client-auth-supported"
+            ],
+            "location": [
+              "/rests/modules/ietf-http-server?revision=2025-11-11"
+            ]
+          },
+          {
+            "name": "ietf-tls-server_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-server",
+            "revision": "2024-10-10",
+            "feature": [
+              "server-ident-x509-cert",
+              "client-auth-x509-cert",
+              "client-auth-supported"
+            ],
+            "location": [
+              "/rests/modules/ietf-tls-server?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "ietf-restconf-subscribed-notifications_2019-11-17",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-subscribed-notifications",
+            "revision": "2019-11-17",
+            "location": [
+              "/rests/modules/ietf-restconf-subscribed-notifications?revision=2019-11-17"
+            ]
+          },
+          {
+            "name": "ietf-tcp-server_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-tcp-server",
+            "revision": "2024-10-10",
+            "feature": [
+              "tcp-server-keepalives"
+            ],
+            "location": [
+              "/rests/modules/ietf-tcp-server?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "opendaylight-inventory_2013-08-19",
+            "namespace": "urn:opendaylight:inventory",
+            "revision": "2013-08-19",
+            "location": [
+              "/rests/modules/opendaylight-inventory?revision=2013-08-19"
+            ]
+          },
+          {
+            "name": "iana-ssh-public-key-algs_2024-10-16",
+            "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-public-key-algs",
+            "revision": "2024-10-16",
+            "location": [
+              "/rests/modules/iana-ssh-public-key-algs?revision=2024-10-16"
+            ]
+          },
+          {
+            "name": "ietf-ip_2018-02-22",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-ip",
+            "revision": "2018-02-22",
+            "feature": [
+              "ipv6-privacy-autoconf",
+              "ipv4-non-contiguous-netmasks"
+            ],
+            "location": [
+              "/rests/modules/ietf-ip?revision=2018-02-22"
+            ]
+          },
+          {
+            "name": "sal-async-config_2017-06-19",
+            "namespace": "urn:opendaylight:async-config:service",
+            "revision": "2017-06-19",
+            "location": [
+              "/rests/modules/sal-async-config?revision=2017-06-19"
+            ]
+          },
+          {
+            "name": "iana-ssh-encryption-algs_2024-10-16",
+            "namespace": "urn:ietf:params:xml:ns:yang:iana-ssh-encryption-algs",
+            "revision": "2024-10-16",
+            "location": [
+              "/rests/modules/iana-ssh-encryption-algs?revision=2024-10-16"
+            ]
+          },
+          {
+            "name": "statistics-manager-control_2015-08-12",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:sm:control",
+            "revision": "2015-08-12",
+            "location": [
+              "/rests/modules/statistics-manager-control?revision=2015-08-12"
+            ]
+          },
+          {
+            "name": "sal-remote-augment_2023-11-03",
+            "namespace": "urn:sal:restconf:event:subscription",
+            "revision": "2023-11-03",
+            "location": [
+              "/rests/modules/sal-remote-augment?revision=2023-11-03"
+            ]
+          },
+          {
+            "name": "opendaylight-group-statistics_2013-11-11",
+            "namespace": "urn:opendaylight:group:statistics",
+            "revision": "2013-11-11",
+            "location": [
+              "/rests/modules/opendaylight-group-statistics?revision=2013-11-11"
+            ]
+          },
+          {
+            "name": "openflowplugin-extension-nicira-match_2014-07-14",
+            "namespace": "urn:opendaylight:openflowplugin:extension:nicira:match",
+            "revision": "2014-07-14",
+            "location": [
+              "/rests/modules/openflowplugin-extension-nicira-match?revision=2014-07-14"
+            ]
+          },
+          {
+            "name": "reconciliation_2018-02-27",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:reconciliation:service",
+            "revision": "2018-02-27",
+            "location": [
+              "/rests/modules/reconciliation?revision=2018-02-27"
+            ]
+          },
+          {
+            "name": "opendaylight-ipv6-arbitrary-bitmask-fields_2016-02-24",
+            "namespace": "urn:opendaylight:opendaylight-ipv6-arbitrary-bitmask-fields",
+            "revision": "2016-02-24",
+            "location": [
+              "/rests/modules/opendaylight-ipv6-arbitrary-bitmask-fields?revision=2016-02-24"
+            ]
+          },
+          {
+            "name": "opendaylight-meter-types_2013-09-18",
+            "namespace": "urn:opendaylight:meter:types",
+            "revision": "2013-09-18",
+            "location": [
+              "/rests/modules/opendaylight-meter-types?revision=2013-09-18"
+            ]
+          },
+          {
+            "name": "system-notifications_2013-09-27",
+            "namespace": "urn:opendaylight:openflow:system",
+            "revision": "2013-09-27",
+            "location": [
+              "/rests/modules/system-notifications?revision=2013-09-27"
+            ]
+          },
+          {
+            "name": "aaa-cert-rpc_2015-12-15",
+            "namespace": "urn:opendaylight:yang:aaa:cert:rpc",
+            "revision": "2015-12-15",
+            "location": [
+              "/rests/modules/aaa-cert-rpc?revision=2015-12-15"
+            ]
+          },
+          {
+            "name": "odl-srm-rpcs_2018-06-26",
+            "namespace": "urn:opendaylight:serviceutils:srm:rpc",
+            "revision": "2018-06-26",
+            "location": [
+              "/rests/modules/odl-srm-rpcs?revision=2018-06-26"
+            ]
+          },
+          {
+            "name": "ietf-yang-schema-mount_2019-01-14",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-schema-mount",
+            "revision": "2019-01-14",
+            "location": [
+              "/rests/modules/ietf-yang-schema-mount?revision=2019-01-14"
+            ]
+          },
+          {
+            "name": "ietf-tcp-common_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-tcp-common",
+            "revision": "2024-10-10",
+            "feature": [
+              "keepalives-supported"
+            ],
+            "location": [
+              "/rests/modules/ietf-tcp-common?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "iana-tls-cipher-suite-algs_2024-10-16",
+            "namespace": "urn:ietf:params:xml:ns:yang:iana-tls-cipher-suite-algs",
+            "revision": "2024-10-16",
+            "location": [
+              "/rests/modules/iana-tls-cipher-suite-algs?revision=2024-10-16"
+            ]
+          },
+          {
+            "name": "ietf-netconf-nmda_2019-01-07",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-nmda",
+            "revision": "2019-01-07",
+            "feature": [
+              "with-defaults",
+              "origin"
+            ],
+            "location": [
+              "/rests/modules/ietf-netconf-nmda?revision=2019-01-07"
+            ]
+          },
+          {
+            "name": "odl-controller-cds-types_2025-01-31",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:controller:cds:types",
+            "revision": "2025-01-31",
+            "location": [
+              "/rests/modules/odl-controller-cds-types?revision=2025-01-31"
+            ]
+          },
+          {
+            "name": "aaa-encrypt-service-config_2024-02-02",
+            "namespace": "config:aaa:authn:encrypt:service:config",
+            "revision": "2024-02-02",
+            "location": [
+              "/rests/modules/aaa-encrypt-service-config?revision=2024-02-02"
+            ]
+          },
+          {
+            "name": "ietf-datastores_2018-02-14",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-datastores",
+            "revision": "2018-02-14",
+            "location": [
+              "/rests/modules/ietf-datastores?revision=2018-02-14"
+            ]
+          },
+          {
+            "name": "lldp-speaker_2014-10-23",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:applications:lldp-speaker",
+            "revision": "2014-10-23",
+            "location": [
+              "/rests/modules/lldp-speaker?revision=2014-10-23"
+            ]
+          },
+          {
+            "name": "ietf-restconf-monitoring_2017-01-26",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-monitoring",
+            "revision": "2017-01-26",
+            "location": [
+              "/rests/modules/ietf-restconf-monitoring?revision=2017-01-26"
+            ]
+          },
+          {
+            "name": "ietf-udp-server_2025-12-16",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-udp-server",
+            "revision": "2025-12-16",
+            "location": [
+              "/rests/modules/ietf-udp-server?revision=2025-12-16"
+            ]
+          },
+          {
+            "name": "openflow-switch-connection-config_2016-05-06",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:switch:connection:config",
+            "revision": "2016-05-06",
+            "location": [
+              "/rests/modules/openflow-switch-connection-config?revision=2016-05-06"
+            ]
+          },
+          {
+            "name": "opendaylight-multipart-types_2017-01-12",
+            "namespace": "urn:opendaylight:multipart:types",
+            "revision": "2017-01-12",
+            "location": [
+              "/rests/modules/opendaylight-multipart-types?revision=2017-01-12"
+            ]
+          },
+          {
+            "name": "flow-topology-discovery_2013-08-19",
+            "namespace": "urn:opendaylight:flow:topology:discovery",
+            "revision": "2013-08-19",
+            "location": [
+              "/rests/modules/flow-topology-discovery?revision=2013-08-19"
+            ]
+          },
+          {
+            "name": "ietf-interfaces_2018-02-20",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-interfaces",
+            "revision": "2018-02-20",
+            "feature": [
+              "pre-provisioning",
+              "arbitrary-names",
+              "if-mib"
+            ],
+            "location": [
+              "/rests/modules/ietf-interfaces?revision=2018-02-20"
+            ]
+          },
+          {
+            "name": "opendaylight-group-types_2013-10-18",
+            "namespace": "urn:opendaylight:group:types",
+            "revision": "2013-10-18",
+            "location": [
+              "/rests/modules/opendaylight-group-types?revision=2013-10-18"
+            ]
+          },
+          {
+            "name": "aaa_2016-12-14",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:aaa",
+            "revision": "2016-12-14",
+            "location": [
+              "/rests/modules/aaa?revision=2016-12-14"
+            ]
+          },
+          {
+            "name": "sal-meters-batch_2016-03-16",
+            "namespace": "urn:opendaylight:meters:service",
+            "revision": "2016-03-16",
+            "location": [
+              "/rests/modules/sal-meters-batch?revision=2016-03-16"
+            ]
+          },
+          {
+            "name": "opendaylight-table-types_2013-10-26",
+            "namespace": "urn:opendaylight:table:types",
+            "revision": "2013-10-26",
+            "location": [
+              "/rests/modules/opendaylight-table-types?revision=2013-10-26"
+            ]
+          },
+          {
+            "name": "opendaylight-meter-statistics_2013-11-11",
+            "namespace": "urn:opendaylight:meter:statistics",
+            "revision": "2013-11-11",
+            "location": [
+              "/rests/modules/opendaylight-meter-statistics?revision=2013-11-11"
+            ]
+          },
+          {
+            "name": "forwarding-rules-manager-config_2016-05-11",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflowplugin:app:forwardingrules-manager:config",
+            "revision": "2016-05-11",
+            "location": [
+              "/rests/modules/forwarding-rules-manager-config?revision=2016-05-11"
+            ]
+          },
+          {
+            "name": "batch-common_2016-03-22",
+            "namespace": "urn:opendaylight:service:batch:common",
+            "revision": "2016-03-22",
+            "location": [
+              "/rests/modules/batch-common?revision=2016-03-22"
+            ]
+          },
+          {
+            "name": "iana-crypt-hash_2014-08-06",
+            "namespace": "urn:ietf:params:xml:ns:yang:iana-crypt-hash",
+            "revision": "2014-08-06",
+            "feature": [
+              "crypt-hash-sha-512",
+              "crypt-hash-sha-256",
+              "crypt-hash-md5"
+            ],
+            "location": [
+              "/rests/modules/iana-crypt-hash?revision=2014-08-06"
+            ]
+          },
+          {
+            "name": "aaa-app-config_2017-06-19",
+            "namespace": "urn:opendaylight:aaa:app:config",
+            "revision": "2017-06-19",
+            "location": [
+              "/rests/modules/aaa-app-config?revision=2017-06-19"
+            ]
+          },
+          {
+            "name": "ietf-x509-cert-to-name_2014-12-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-x509-cert-to-name",
+            "revision": "2014-12-10",
+            "location": [
+              "/rests/modules/ietf-x509-cert-to-name?revision=2014-12-10"
+            ]
+          },
+          {
+            "name": "sal-echo_2015-03-05",
+            "namespace": "urn:opendaylight:echo:service",
+            "revision": "2015-03-05",
+            "location": [
+              "/rests/modules/sal-echo?revision=2015-03-05"
+            ]
+          },
+          {
+            "name": "ietf-udp-client_2025-12-16",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-udp-client",
+            "revision": "2025-12-16",
+            "feature": [
+              "local-binding"
+            ],
+            "location": [
+              "/rests/modules/ietf-udp-client?revision=2025-12-16"
+            ]
+          },
+          {
+            "name": "opendaylight-action-types_2013-11-12",
+            "namespace": "urn:opendaylight:action:types",
+            "revision": "2013-11-12",
+            "location": [
+              "/rests/modules/opendaylight-action-types?revision=2013-11-12"
+            ]
+          },
+          {
+            "name": "ietf-netconf_2011-06-01",
+            "namespace": "urn:ietf:params:xml:ns:netconf:base:1.0",
+            "revision": "2011-06-01",
+            "feature": [
+              "xpath",
+              "url",
+              "rollback-on-error",
+              "validate",
+              "startup",
+              "confirmed-commit",
+              "candidate",
+              "writable-running"
+            ],
+            "location": [
+              "/rests/modules/ietf-netconf?revision=2011-06-01"
+            ]
+          },
+          {
+            "name": "openflow-provider-config_2016-05-10",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:openflow:provider:config",
+            "revision": "2016-05-10",
+            "location": [
+              "/rests/modules/openflow-provider-config?revision=2016-05-10"
+            ]
+          },
+          {
+            "name": "ietf-restconf-server_2024-08-14",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-server",
+            "revision": "2024-08-14",
+            "feature": [
+              "https-listen",
+              "http-listen"
+            ],
+            "location": [
+              "/rests/modules/ietf-restconf-server?revision=2024-08-14"
+            ]
+          },
+          {
+            "name": "opendaylight-statistics-types_2013-09-25",
+            "namespace": "urn:opendaylight:model:statistics:types",
+            "revision": "2013-09-25",
+            "location": [
+              "/rests/modules/opendaylight-statistics-types?revision=2013-09-25"
+            ]
+          },
+          {
+            "name": "sal-experimenter-mp-message_2015-10-20",
+            "namespace": "urn:opendaylight:experimenter-mp-message:service",
+            "revision": "2015-10-20",
+            "location": [
+              "/rests/modules/sal-experimenter-mp-message?revision=2015-10-20"
+            ]
+          },
+          {
+            "name": "openflow-action_2015-02-03",
+            "namespace": "urn:opendaylight:openflow:common:action",
+            "revision": "2015-02-03",
+            "location": [
+              "/rests/modules/openflow-action?revision=2015-02-03"
+            ]
+          },
+          {
+            "name": "sal-role_2015-07-27",
+            "namespace": "urn:opendaylight:role:service",
+            "revision": "2015-07-27",
+            "location": [
+              "/rests/modules/sal-role?revision=2015-07-27"
+            ]
+          },
+          {
+            "name": "openflowplugin-extension-nicira-action_2014-07-14",
+            "namespace": "urn:opendaylight:openflowplugin:extension:nicira:action",
+            "revision": "2014-07-14",
+            "location": [
+              "/rests/modules/openflowplugin-extension-nicira-action?revision=2014-07-14"
+            ]
+          },
+          {
+            "name": "sal-flow_2013-08-19",
+            "namespace": "urn:opendaylight:flow:service",
+            "revision": "2013-08-19",
+            "location": [
+              "/rests/modules/sal-flow?revision=2013-08-19"
+            ]
+          },
+          {
+            "name": "opendaylight-queue-types_2013-09-25",
+            "namespace": "urn:opendaylight:flow:types:queue",
+            "revision": "2013-09-25",
+            "location": [
+              "/rests/modules/opendaylight-queue-types?revision=2013-09-25"
+            ]
+          },
+          {
+            "name": "opendaylight-flow-table-statistics_2013-12-15",
+            "namespace": "urn:opendaylight:flow:table:statistics",
+            "revision": "2013-12-15",
+            "location": [
+              "/rests/modules/opendaylight-flow-table-statistics?revision=2013-12-15"
+            ]
+          },
+          {
+            "name": "ietf-yang-types_2013-07-15",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+            "revision": "2013-07-15",
+            "location": [
+              "/rests/modules/ietf-yang-types?revision=2013-07-15"
+            ]
+          },
+          {
+            "name": "yang-ext_2013-07-09",
+            "namespace": "urn:opendaylight:yang:extension:yang-ext",
+            "revision": "2013-07-09",
+            "location": [
+              "/rests/modules/yang-ext?revision=2013-07-09"
+            ]
+          },
+          {
+            "name": "opendaylight-arbitrary-bitmask-fields_2016-01-30",
+            "namespace": "urn:opendaylight:arbitrary:bitmask:fields",
+            "revision": "2016-01-30",
+            "location": [
+              "/rests/modules/opendaylight-arbitrary-bitmask-fields?revision=2016-01-30"
+            ]
+          },
+          {
+            "name": "ietf-netconf-notifications_2012-02-06",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-notifications",
+            "revision": "2012-02-06",
+            "location": [
+              "/rests/modules/ietf-netconf-notifications?revision=2012-02-06"
+            ]
+          },
+          {
+            "name": "ietf-yang-patch_2017-02-22",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-patch",
+            "revision": "2017-02-22",
+            "location": [
+              "/rests/modules/ietf-yang-patch?revision=2017-02-22"
+            ]
+          },
+          {
+            "name": "packet-processing_2013-07-09",
+            "namespace": "urn:opendaylight:packet:service",
+            "revision": "2013-07-09",
+            "location": [
+              "/rests/modules/packet-processing?revision=2013-07-09"
+            ]
+          },
+          {
+            "name": "opendaylight-topology-inventory_2013-10-30",
+            "namespace": "urn:opendaylight:model:topology:inventory",
+            "revision": "2013-10-30",
+            "location": [
+              "/rests/modules/opendaylight-topology-inventory?revision=2013-10-30"
+            ]
+          },
+          {
+            "name": "distributed-datastore-provider_2025-01-30",
+            "namespace": "urn:opendaylight:params:xml:ns:yang:controller:config:distributed-datastore-provider",
+            "revision": "2025-01-30",
+            "location": [
+              "/rests/modules/distributed-datastore-provider?revision=2025-01-30"
+            ]
+          },
+          {
+            "name": "opendaylight-port-statistics_2013-12-14",
+            "namespace": "urn:opendaylight:port:statistics",
+            "revision": "2013-12-14",
+            "location": [
+              "/rests/modules/opendaylight-port-statistics?revision=2013-12-14"
+            ]
+          },
+          {
+            "name": "nc-notifications_2008-07-14",
+            "namespace": "urn:ietf:params:xml:ns:netmod:notification",
+            "revision": "2008-07-14",
+            "location": [
+              "/rests/modules/nc-notifications?revision=2008-07-14"
+            ]
+          },
+          {
+            "name": "opendaylight-l2-types_2013-08-27",
+            "namespace": "urn:opendaylight:l2:types",
+            "revision": "2013-08-27",
+            "location": [
+              "/rests/modules/opendaylight-l2-types?revision=2013-08-27"
+            ]
+          },
+          {
+            "name": "odl-serviceutils-upgrade_2018-07-02",
+            "namespace": "urn:opendaylight:serviceutils:upgrade",
+            "revision": "2018-07-02",
+            "location": [
+              "/rests/modules/odl-serviceutils-upgrade?revision=2018-07-02"
+            ]
+          },
+          {
+            "name": "sal-port_2013-11-07",
+            "namespace": "urn:opendaylight:port:service",
+            "revision": "2013-11-07",
+            "location": [
+              "/rests/modules/sal-port?revision=2013-11-07"
+            ]
+          },
+          {
+            "name": "ietf-tls-client_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-client",
+            "revision": "2024-10-10",
+            "feature": [
+              "client-ident-x509-cert",
+              "server-auth-x509-cert"
+            ],
+            "location": [
+              "/rests/modules/ietf-tls-client?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "openflow-types_2013-07-31",
+            "namespace": "urn:opendaylight:openflow:common:types",
+            "revision": "2013-07-31",
+            "location": [
+              "/rests/modules/openflow-types?revision=2013-07-31"
+            ]
+          },
+          {
+            "name": "iana-http-versions_2026-02-04",
+            "namespace": "urn:ietf:params:xml:ns:yang:iana-http-versions",
+            "revision": "2026-02-04",
+            "location": [
+              "/rests/modules/iana-http-versions?revision=2026-02-04"
+            ]
+          },
+          {
+            "name": "ietf-yang-library_2019-01-04",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-library",
+            "revision": "2019-01-04",
+            "location": [
+              "/rests/modules/ietf-yang-library?revision=2019-01-04"
+            ]
+          },
+          {
+            "name": "ietf-netconf-acm_2018-02-14",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-acm",
+            "revision": "2018-02-14",
+            "location": [
+              "/rests/modules/ietf-netconf-acm?revision=2018-02-14"
+            ]
+          },
+          {
+            "name": "aaa-password-service-config_2017-06-19",
+            "namespace": "urn:opendaylight:aaa:password:service:config",
+            "revision": "2017-06-19",
+            "location": [
+              "/rests/modules/aaa-password-service-config?revision=2017-06-19"
+            ]
+          },
+          {
+            "name": "sal-experimenter-message_2015-10-20",
+            "namespace": "urn:opendaylight:experimenter-message:service",
+            "revision": "2015-10-20",
+            "location": [
+              "/rests/modules/sal-experimenter-message?revision=2015-10-20"
+            ]
+          },
+          {
+            "name": "openflow-configuration_2014-06-30",
+            "namespace": "urn:opendaylight:openflow:config",
+            "revision": "2014-06-30",
+            "location": [
+              "/rests/modules/openflow-configuration?revision=2014-06-30"
+            ]
+          },
+          {
+            "name": "ietf-origin_2018-02-14",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-origin",
+            "revision": "2018-02-14",
+            "location": [
+              "/rests/modules/ietf-origin?revision=2018-02-14"
+            ]
+          },
+          {
+            "name": "sal-group_2013-09-18",
+            "namespace": "urn:opendaylight:group:service",
+            "revision": "2013-09-18",
+            "location": [
+              "/rests/modules/sal-group?revision=2013-09-18"
+            ]
+          },
+          {
+            "name": "ietf-subscribed-notifications_2019-09-09",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-subscribed-notifications",
+            "revision": "2019-09-09",
+            "feature": [
+              "subtree",
+              "encode-xml",
+              "encode-json"
+            ],
+            "location": [
+              "/rests/modules/ietf-subscribed-notifications?revision=2019-09-09"
+            ]
+          },
+          {
+            "name": "notifications_2008-07-14",
+            "namespace": "urn:ietf:params:xml:ns:netconf:notification:1.0",
+            "revision": "2008-07-14",
+            "location": [
+              "/rests/modules/notifications?revision=2008-07-14"
+            ]
+          },
+          {
+            "name": "nicira-action_2014-04-21",
+            "namespace": "urn:opendaylight:openflowjava:nx:action",
+            "revision": "2014-04-21",
+            "location": [
+              "/rests/modules/nicira-action?revision=2014-04-21"
+            ]
+          },
+          {
+            "name": "ietf-http-client_2024-02-08",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-http-client",
+            "revision": "2024-02-08",
+            "feature": [
+              "basic-auth",
+              "tcp-supported",
+              "tls-supported"
+            ],
+            "location": [
+              "/rests/modules/ietf-http-client?revision=2024-02-08"
+            ]
+          },
+          {
+            "name": "barrier-common_2016-03-15",
+            "namespace": "urn:opendaylight:service:barrier:common",
+            "revision": "2016-03-15",
+            "location": [
+              "/rests/modules/barrier-common?revision=2016-03-15"
+            ]
+          },
+          {
+            "name": "opendaylight-match-types_2013-10-26",
+            "namespace": "urn:opendaylight:model:match:types",
+            "revision": "2013-10-26",
+            "location": [
+              "/rests/modules/opendaylight-match-types?revision=2013-10-26"
+            ]
+          },
+          {
+            "name": "ietf-inet-types_2013-07-15",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
+            "revision": "2013-07-15",
+            "location": [
+              "/rests/modules/ietf-inet-types?revision=2013-07-15"
+            ]
+          },
+          {
+            "name": "sal-queue_2015-03-05",
+            "namespace": "urn:opendaylight:queue:service",
+            "revision": "2015-03-05",
+            "location": [
+              "/rests/modules/sal-queue?revision=2015-03-05"
+            ]
+          },
+          {
+            "name": "ietf-ssh-client_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-client",
+            "revision": "2024-10-10",
+            "feature": [
+              "client-ident-hostbased",
+              "ssh-client-keepalives",
+              "client-ident-password",
+              "client-ident-publickey"
+            ],
+            "location": [
+              "/rests/modules/ietf-ssh-client?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "opendaylight-flow-types_2013-10-26",
+            "namespace": "urn:opendaylight:flow:types",
+            "revision": "2013-10-26",
+            "location": [
+              "/rests/modules/opendaylight-flow-types?revision=2013-10-26"
+            ]
+          },
+          {
+            "name": "ietf-crypto-types_2024-10-10",
+            "namespace": "urn:ietf:params:xml:ns:yang:ietf-crypto-types",
+            "revision": "2024-10-10",
+            "feature": [
+              "one-asymmetric-key-format",
+              "hidden-private-keys",
+              "cleartext-passwords",
+              "one-symmetric-key-format",
+              "p10-csr-format",
+              "encrypted-symmetric-keys",
+              "cleartext-symmetric-keys",
+              "cms-enveloped-data-format",
+              "csr-generation",
+              "hidden-symmetric-keys",
+              "encrypted-passwords",
+              "encrypted-private-keys",
+              "asymmetrically-encrypted-value-format",
+              "cms-encrypted-data-format",
+              "cleartext-private-keys",
+              "symmetrically-encrypted-value-format",
+              "certificate-expiration-notification"
+            ],
+            "location": [
+              "/rests/modules/ietf-crypto-types?revision=2024-10-10"
+            ]
+          },
+          {
+            "name": "odl-codegen-extensions_2024-06-27",
+            "namespace": "urn:opendaylight:yang:extension:codegen",
+            "revision": "2024-06-27",
+            "location": [
+              "/rests/modules/odl-codegen-extensions?revision=2024-06-27"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-id": "2"
+  }
+}

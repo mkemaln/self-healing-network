@@ -10,7 +10,7 @@ from self_healing_env import SelfHealingEnv
 
 
 GNS3_SSH = {
-    "host": "192.168.56.101",
+    "host": "192.168.158.130",
     "user": "admin",
     "bridge": "br0",
 }
@@ -150,16 +150,66 @@ def train_real(total_episodes=100, timesteps_per_episode=50):
     env.close()
 
 
+def eval_agent(
+    model_path="self_healing_sim",
+    num_episodes=3,
+    timesteps_per_episode=30,
+    inject_failures=True,
+):
+    print("=" * 60)
+    print("EVAL MODE: Testing trained agent on real network")
+    print(f"Model: {model_path}  Episodes: {num_episodes}")
+    print("=" * 60)
+
+    env = make_env(simulation=False, num_links=4)
+    model = MaskablePPO.load(model_path)
+    inner = env.env
+
+    for episode in range(num_episodes):
+        if inject_failures:
+            link_idx = random.randint(0, inner.num_links - 1)
+            port = gns3_port_for_link(link_idx)
+            print(f"\n--- Episode {episode + 1}: failing link {link_idx} (port {port}) ---")
+            set_link_state(port, down=True)
+            time.sleep(2)
+
+        obs, _ = env.reset()
+        episode_reward = 0.0
+
+        for step in range(timesteps_per_episode):
+            action_masks = env.action_masks()
+            action, _ = model.predict(obs, action_masks=action_masks, deterministic=True)
+            obs, reward, done, truncated, _ = env.step(action)
+            action_label = "no-op" if action == 0 else f"reroute link {action - 1}"
+            print(f"  step {step + 1:2d}: {action_label}  reward={reward:+.3f}")
+            episode_reward += reward
+            if done or truncated:
+                break
+
+        if inject_failures:
+            set_link_state(port, down=False)
+            time.sleep(2)
+
+        print(f"  → Episode reward: {episode_reward:.2f}")
+        print(f"  → Network healthy: {'yes' if done else 'no'}")
+
+    env.close()
+
+
 if __name__ == "__main__":
     import sys
 
     mode = sys.argv[1] if len(sys.argv) > 1 else "sim"
-    timesteps = int(sys.argv[2]) if len(sys.argv) > 2 else 50000
+    arg2 = sys.argv[2] if len(sys.argv) > 2 else None
 
     if mode == "sim":
+        timesteps = int(arg2) if arg2 else 50000
         train_simulation(timesteps)
     elif mode == "real":
         train_real(total_episodes=100)
+    elif mode == "eval":
+        model_path = arg2 if arg2 else "self_healing_sim"
+        eval_agent(model_path)
     else:
-        print(f"Usage: python train.py [sim|real] [timesteps]")
+        print(f"Usage: python train.py [sim|real|eval] [timesteps|model_path]")
         sys.exit(1)

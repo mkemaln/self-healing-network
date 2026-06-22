@@ -1,0 +1,197 @@
+/data/user/0/org.qpython.qpy3/files/bin/qpython.sh "/storage/emulated/0/Android/data/org.qpython.qpy3/projects3/mndp/main.py" && exit
+/ $ /data/user/0/org.qpython.qpy3/files/bin/qpython
+.sh "/storage/emulated/0/Android/data/org.qpython.q
+py3/projects3/mndp/main.py" && exit
+Listening on port 5678...
+Received packet from ('192.168.78.129', 5678)
+Sequence Number: 1931411456
+Type: MACAddress, Value: e4:8d:8c:30:66:f3
+Type: Identity, Value: JTI-Lt.5-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 5 days, 14:11:17
+Type: SoftwareID, Value: MZTU-XJNN
+Type: Board, Value: RB2011UiAS
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: ether5-05.07
+Type: IPv4Address, Value: 192.168.78.129
+Received packet from ('192.168.78.129', 5678)
+Sequence Number: 1948188672
+Type: MACAddress, Value: e4:8d:8c:30:66:f3
+Type: Identity, Value: JTI-Lt.5-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 5 days, 14:12:17
+Type: SoftwareID, Value: MZTU-XJNN
+Type: Board, Value: RB2011UiAS
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: ether5-05.07
+Type: IPv4Address, Value: 192.168.78.129
+Received packet from ('192.168.87.1', 5678)
+Sequence Number: 7323
+Type: MACAddress, Value: 6c:3b:6b:ff:6b:f4
+Type: Identity, Value: JTI-Lt.6-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 5 days, 2:03:13
+Type: SoftwareID, Value: L6GX-89G0
+Type: Board, Value: RB3011UiAS
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: ether9-WLB-6.1
+Type: IPv4Address, Value: 192.168.87.1
+Received packet from ('192.168.74.225', 5678)
+Sequence Number: 7324
+Type: MACAddress, Value: 6c:3b:6b:ff:6b:ef
+Type: Identity, Value: JTI-Lt.6-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 5 days, 2:04:13
+Type: SoftwareID, Value: L6GX-89G0
+Type: Board, Value: RB3011UiAS
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-630-06.14-R.Arsip
+Type: IPv4Address, Value: 192.168.74.225
+Received packet from ('192.168.72.1', 5678)
+Sequence Number: 7325
+Type: MACAddress, Value: 6c:3b:6b:ff:6b:f3
+Type: Identity, Value: JTI-Lt.6-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 5 days, 2:05:13
+Type: SoftwareID, Value: L6GX-89G0
+Type: Board, Value: RB3011UiAS
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-636-06.16-LSI-2
+Type: IPv4Address, Value: 192.168.72.1
+Received packet from ('192.168.75.1', 5678)
+Sequence Number: 7332
+Type: MACAddress, Value: 6c:3b:6b:ff:6b:f1
+Type: Identity, Value: JTI-Lt.6-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 5 days, 2:06:13
+Type: SoftwareID, Value: L6GX-89G0
+Type: Board, Value: RB3011UiAS
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-633-06.18-LPJ-2
+Type: IPv4Address, Value: 192.168.75.1
+Received packet from ('192.168.71.129', 5678)
+Sequence Number: 504
+Type: MACAddress, Value: 74:4d:28:27:8a:5f
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:36:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: ether9-WLB-7.1
+Type: IPv4Address, Value: 192.168.71.129
+Received packet from ('192.168.71.129', 5678)
+Sequence Number: 505
+Type: MACAddress, Value: 74:4d:28:27:8a:5f
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:37:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: ether9-WLB-7.1
+Type: IPv4Address, Value: 192.168.71.129
+Received packet from ('192.168.69.129', 5678)
+Sequence Number: 19721
+Type: MACAddress, Value: 74:4d:28:27:8a:5e
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:42:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-617-07.18-LVK-2
+Type: IPv4Address, Value: 192.168.69.129
+Received packet from ('192.168.70.129', 5678)
+Sequence Number: 19722
+Type: MACAddress, Value: 74:4d:28:27:8a:5e
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:43:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-619-07.19-LPJ-4
+Type: IPv4Address, Value: 192.168.70.129
+Received packet from ('192.168.71.129', 5678)
+Sequence Number: 512
+Type: MACAddress, Value: 74:4d:28:27:8a:5f
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:44:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: ether9-WLB-7.1
+Type: IPv4Address, Value: 192.168.71.129
+Received packet from ('192.168.68.1', 5678)
+Sequence Number: 2768
+Type: MACAddress, Value: 74:4d:28:27:8a:5d
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:45:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-614-07.08-RPL-7
+Type: IPv4Address, Value: 192.168.68.1
+Received packet from ('192.168.67.1', 5678)
+Sequence Number: 2769
+Type: MACAddress, Value: 74:4d:28:27:8a:5d
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:46:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-612-07.05-RPL-5
+Type: IPv4Address, Value: 192.168.67.1
+Received packet from ('192.168.66.129', 5678)
+Sequence Number: 19725
+Type: MACAddress, Value: 74:4d:28:27:8a:5c
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:47:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-611-07.04-RPL-4
+Type: IPv4Address, Value: 192.168.66.129
+Received packet from ('192.168.65.1', 5678)
+Sequence Number: 19726
+Type: MACAddress, Value: 74:4d:28:27:8a:5c
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:48:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-608-07.01-RPL-1
+Type: IPv4Address, Value: 192.168.65.1
+Received packet from ('192.168.65.129', 5678)
+Sequence Number: 19727
+Type: MACAddress, Value: 74:4d:28:27:8a:5c
+Type: Identity, Value: JTI-Lt.7-Router
+Type: Version, Value: 6.47 (stable)
+Type: Platform, Value: MikroTik
+Type: Uptime, Value: 13 days, 16:49:09
+Type: SoftwareID, Value: GPFP-7AZ9
+Type: Board, Value: RB4011iGS+
+Type: Unpack, Value: b'\x00'
+Type: InterfaceName, Value: vlan-609-07.02-RPL-2
+Type: IPv4Address, Value: 192.168.65.129
