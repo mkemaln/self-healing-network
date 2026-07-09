@@ -7,3 +7,4 @@ pandas
 shimmy
 pygame
 requests
+paramiko

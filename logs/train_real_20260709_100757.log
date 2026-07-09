@@ -1,0 +1,54 @@
+[2026-07-09 10:07:57] INFO  ============================================================
+[2026-07-09 10:07:57] INFO  TRAINING MODE: Real network (GNS3 + ODL)
+[2026-07-09 10:07:57] INFO  episodes=100  steps_per_ep=50  num_links=4
+[2026-07-09 10:07:57] INFO  hyperparams: lr=0.0003  gamma=0.95  n_steps=128
+[2026-07-09 10:07:57] INFO  ============================================================
+[2026-07-09 10:07:59] INFO  Episode   1/100 | failing link=1 port=2
+[2026-07-09 10:08:08] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:08:08] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:08:14] INFO  Episode   2/100 | failing link=0 port=1
+[2026-07-09 10:08:21] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:08:21] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:08:27] INFO  Episode   3/100 | failing link=3 port=4
+[2026-07-09 10:08:36] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:08:36] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:08:42] INFO  Episode   4/100 | failing link=3 port=4
+[2026-07-09 10:08:51] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:08:51] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:08:57] INFO  Episode   5/100 | failing link=0 port=1
+[2026-07-09 10:09:04] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:09:04] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:09:10] INFO  Episode   6/100 | failing link=0 port=1
+[2026-07-09 10:09:19] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:09:19] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:09:23] INFO  Episode   7/100 | failing link=3 port=4
+[2026-07-09 10:09:28] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:09:28] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:09:34] INFO  Episode   8/100 | failing link=2 port=3
+[2026-07-09 10:09:43] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:09:43] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:09:47] INFO  Episode   9/100 | failing link=0 port=1
+[2026-07-09 10:09:56] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:09:56] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:10:02] INFO  Episode  10/100 | failing link=2 port=3
+[2026-07-09 10:10:09] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:10:09] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:10:15] INFO  Episode  11/100 | failing link=0 port=1
+[2026-07-09 10:10:20] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:10:20] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:10:26] INFO  Episode  12/100 | failing link=2 port=3
+[2026-07-09 10:10:31] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:10:31] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:10:36] INFO  Episode  13/100 | failing link=2 port=3
+[2026-07-09 10:10:42] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:10:42] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:10:47] INFO  Episode  14/100 | failing link=1 port=2
+[2026-07-09 10:10:56] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:10:56] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:10:58] INFO  Episode  15/100 | failing link=0 port=1
+[2026-07-09 10:11:07] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:11:07] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:11:09] INFO  Episode  16/100 | failing link=0 port=1
+[2026-07-09 10:11:14] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:11:14] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:11:20] INFO  Episode  17/100 | failing link=1 port=2

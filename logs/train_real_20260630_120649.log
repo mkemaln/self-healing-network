@@ -1,0 +1,7 @@
+[2026-06-30 12:06:49] INFO  ============================================================
+[2026-06-30 12:06:49] INFO  TRAINING MODE: Real network (GNS3 + ODL)
+[2026-06-30 12:06:49] INFO  episodes=100  steps_per_ep=50  num_links=4
+[2026-06-30 12:06:49] INFO  hyperparams: lr=0.0003  gamma=0.95  n_steps=128
+[2026-06-30 12:06:49] INFO  ============================================================
+[2026-06-30 12:06:51] INFO  Episode   1/100 | failing link=3 port=4
+[2026-06-30 12:07:20] DEBUG   no valid reroute targets — ending early

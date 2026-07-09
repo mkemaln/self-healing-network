@@ -1,0 +1,39 @@
+[2026-07-09 10:12:59] INFO  ============================================================
+[2026-07-09 10:12:59] INFO  TRAINING MODE: Real network (GNS3 + ODL)
+[2026-07-09 10:12:59] INFO  episodes=100  steps_per_ep=50  num_links=4
+[2026-07-09 10:12:59] INFO  hyperparams: lr=0.0003  gamma=0.95  n_steps=128
+[2026-07-09 10:12:59] INFO  ============================================================
+[2026-07-09 10:13:00] INFO  Episode   1/100 | failing link=0 port=1
+[2026-07-09 10:13:14] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:13:14] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:13:23] INFO  Episode   2/100 | failing link=3 port=4
+[2026-07-09 10:13:36] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:13:36] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:13:46] INFO  Episode   3/100 | failing link=2 port=3
+[2026-07-09 10:13:59] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:13:59] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:14:08] INFO  Episode   4/100 | failing link=2 port=3
+[2026-07-09 10:14:21] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:14:21] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:14:31] INFO  Episode   5/100 | failing link=2 port=3
+[2026-07-09 10:14:43] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:14:43] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:14:53] INFO  Episode   6/100 | failing link=0 port=1
+[2026-07-09 10:15:06] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:15:06] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:15:16] INFO  Episode   7/100 | failing link=2 port=3
+[2026-07-09 10:15:28] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:15:28] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:15:38] INFO  Episode   8/100 | failing link=0 port=1
+[2026-07-09 10:15:51] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:15:51] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:16:00] INFO  Episode   9/100 | failing link=2 port=3
+[2026-07-09 10:16:13] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:16:13] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:16:23] INFO  Episode  10/100 | failing link=2 port=3
+[2026-07-09 10:16:36] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:16:36] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:16:45] INFO  Episode  11/100 | failing link=2 port=3
+[2026-07-09 10:16:58] DEBUG   no valid reroute targets — ending early
+[2026-07-09 10:16:58] INFO    -> reward=0.00  avg_last_20=0.000  steps=1  done=False
+[2026-07-09 10:17:08] INFO  Episode  12/100 | failing link=2 port=3

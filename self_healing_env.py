@@ -65,10 +65,12 @@ class SelfHealingEnv(gym.Env):
         self._step_count = 0
         self._link_reroute_count = {}
         self._prev_obs = None
+        self._links = []
+        self._reroute_flow_counter = 0
 
     def _build_real_state(self):
         nodes = self.client.get_nodes()
-        links = self.client.get_links()
+        self._links = self.client.get_links()
         port_stats = self.client.get_all_port_stats()
 
         n_active = 0
@@ -77,8 +79,8 @@ class SelfHealingEnv(gym.Env):
         link_features = []
 
         for i in range(self.num_links):
-            if i < len(links):
-                link = links[i]
+            if i < len(self._links):
+                link = self._links[i]
                 src_dev = link["src"]["device"]
                 src_port = link["src"]["port"]
                 dst_dev = link["dst"]["device"]
@@ -160,7 +162,10 @@ class SelfHealingEnv(gym.Env):
         if self.simulation_mode:
             loss = self._sim.loss_rates[idx]
             return loss < 0.01 and self._sim.active[idx]
-        return True
+        if self._prev_obs is None:
+            return True
+        loss = float(self._prev_obs[idx * 4 + 2])
+        return loss < 0.01
 
     def _was_recently_rerouted(self, link_idx):
         last = self._link_reroute_count.get(link_idx)
@@ -169,8 +174,40 @@ class SelfHealingEnv(gym.Env):
         return (self._step_count - last) <= self.flapping_window
 
     def _reroute_via_odl(self, link_idx):
-        print(f"[REROUTE] Link {link_idx} — pushing flow rule via ODL")
-        return True
+        if link_idx >= len(self._links):
+            print(f"[REROUTE] No link data for index {link_idx}")
+            return True
+
+        link = self._links[link_idx]
+        src_node = link["src"]["device"]
+        src_port = link["src"]["port"]
+
+        alt_port = self._find_alternative_port(src_node, src_port)
+        if not alt_port:
+            print(f"[REROUTE] No alternative port found on {src_node} — installing drop flow")
+            self._reroute_flow_counter += 1
+            self.client.push_flow(src_node, f"reroute-{self._reroute_flow_counter}",
+                                  src_port, src_port, priority=200)
+            return True
+
+        self._reroute_flow_counter += 1
+        flow_id = f"reroute-{self._reroute_flow_counter}"
+        ok = self.client.push_flow(src_node, flow_id, src_port, alt_port, priority=200)
+        if ok:
+            print(f"[REROUTE] Link {link_idx}: {src_node}:{src_port} -> port {alt_port}")
+        else:
+            print(f"[REROUTE] Failed to push flow for link {link_idx}")
+        return ok
+
+    def _find_alternative_port(self, node_id, failed_port):
+        connectors = self.client.get_node_connectors(node_id)
+        alt_port = None
+        for c in connectors:
+            port = c.get("id", "").split(":")[-1]
+            if port != str(failed_port):
+                alt_port = port
+                break
+        return alt_port
 
     def _reroute_simulated(self, link_idx):
         self._sim.reroute_away_from(link_idx)
@@ -222,6 +259,8 @@ class SelfHealingEnv(gym.Env):
 
         if self.simulation_mode:
             self._sim.reset()
+        else:
+            self._links = self.client.get_links()
 
         if options and "failure_link" in options:
             self.inject_failure(
