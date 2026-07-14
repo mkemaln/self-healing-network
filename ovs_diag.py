@@ -1,5 +1,6 @@
 import paramiko
 import time
+import sys
 import argparse
 
 GNS3_SSH = {
@@ -43,7 +44,10 @@ def ssh_and_run(cmds, menu=True):
             out += chan.recv(4096)
             time.sleep(0.3)
         text = out.decode(errors="replace")
-        print(text)
+        try:
+            print(text)
+        except UnicodeEncodeError:
+            print(text.encode(sys.stdout.encoding, errors="replace").decode(sys.stdout.encoding))
 
     client.close()
 
@@ -67,6 +71,54 @@ def main():
         base.append(args.cmd)
 
     ssh_and_run(base)
+
+    print("=" * 60)
+    print("ODL TOPOLOGY CHECK")
+    print("=" * 60)
+    try:
+        from sdn_client import SDNClient
+        odl = SDNClient("http://192.168.158.130:8181")
+        if odl.health_check():
+            nodes = odl.get_nodes()
+            print(f"\nODL nodes ({len(nodes)}):")
+            for n in nodes:
+                nid = n.get("id", "?")
+                connectors = n.get("node-connector", [])
+                ports = [c.get("id", "").split(":")[-1] for c in connectors]
+                print(f"  {nid}  ports: {', '.join(ports)}")
+
+            topo = odl.get_topology()
+            if topo:
+                tnodes = topo.get("node", [])
+                print(f"\nTopology nodes ({len(tnodes)}):")
+                for tn in tnodes:
+                    tnid = tn.get("node-id", "?")
+                    tps = tn.get("termination-point", [])
+                    tp_ports = [tp.get("tp-id", "").split(":")[-1] for tp in tps]
+                    print(f"  {tnid}  tp_ports: {', '.join(tp_ports)}")
+
+            links = odl.get_links()
+            print(f"\nLinks ({len(links)}):")
+            for l in links:
+                print(f"  {l['src']['device']}:{l['src']['port']} <-> {l['dst']['device']}:{l['dst']['port']}")
+
+            if not links:
+                print("  (no links found - ODL needs LLDP or fallback config)")
+                print("\n  To configure, add to train.py:")
+                print('  FALLBACK_LINKS = [')
+                for n in nodes:
+                    nid = n.get("id", "?")
+                    connectors = n.get("node-connector", [])
+                    for c in connectors:
+                        port = c.get("id", "").split(":")[-1]
+                        if port in ("1", "2"):  # example ports
+                            print(f'      {{"src": {{"device": "{nid}", "port": "{port}"}},')
+                            print(f'       "dst": {{"device": "<target-node>", "port": "<target-port>"}}}},')
+                print('  ]')
+        else:
+            print("ODL unreachable at http://192.168.158.130:8181")
+    except Exception as e:
+        print(f"ODL check failed: {e}")
 
 
 if __name__ == "__main__":

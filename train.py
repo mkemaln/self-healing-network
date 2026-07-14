@@ -23,6 +23,15 @@ GNS3_SSH = {
 }
 
 
+FALLBACK_LINKS = [
+    # Fill these in after running `python ovs_diag.py`
+    # Format: {"src": {"device": "<node-id>", "port": "<port>"},
+    #           "dst": {"device": "<node-id>", "port": "<port>"}}
+    # Example (adjust node IDs and ports to match your topology):
+    # {"src": {"device": "openflow:2251799813685248", "port": "1"},
+    #  "dst": {"device": "openflow:1407374883553280", "port": "1"}},
+]
+
 LOG_DIR = "logs"
 
 
@@ -107,7 +116,14 @@ def set_link_state(port, down=True):
         print(f"[FAILURE] SSH/docker failed: {e}")
 
 
-def make_env(simulation=False, num_links=4):
+def make_env(simulation=False, num_links=4, fallback_links=None):
+    if num_links == 0 and not simulation:
+        from sdn_client import SDNClient
+        client = SDNClient("http://192.168.158.130:8181")
+        links = client.get_links(fallback=fallback_links)
+        num_links = max(len(links), 1)
+        print(f"[Auto-detect] ODL reports {num_links} links")
+
     env = SelfHealingEnv(
         odl_url="http://192.168.158.130:8181",
         num_links=num_links,
@@ -120,6 +136,7 @@ def make_env(simulation=False, num_links=4):
         connectivity_weight=3.0,
         action_penalty=0.1,
         healthy_threshold=0.05,
+        fallback_links=fallback_links,
     )
     env = ActionMasker(env, lambda e: e.get_action_mask())
     return env
@@ -181,16 +198,17 @@ def train_simulation(total_timesteps=50000):
     env.close()
 
 
-def train_real(total_episodes=100, timesteps_per_episode=50):
+# def train_real(total_episodes=100, timesteps_per_episode=50):
+def train_real(total_episodes=30, timesteps_per_episode=50):
     log = setup_logging("train_real")
 
+    # need revision regarding the log
     log.info("=" * 60)
     log.info("TRAINING MODE: Real network (GNS3 + ODL)")
     log.info("episodes=%d  steps_per_ep=%d  num_links=4", total_episodes, timesteps_per_episode)
     log.info("hyperparams: lr=0.0003  gamma=0.95  n_steps=128")
     log.info("=" * 60)
-
-    env = make_env(simulation=False, num_links=4)
+    env = make_env(simulation=False, num_links=0, fallback_links=FALLBACK_LINKS)
     model = MaskablePPO(
         MaskableActorCriticPolicy,
         env,
@@ -259,7 +277,7 @@ def eval_agent(
              model_path, num_episodes, timesteps_per_episode, inject_failures)
     log.info("=" * 60)
 
-    env = make_env(simulation=False, num_links=4)
+    env = make_env(simulation=False, num_links=0, fallback_links=FALLBACK_LINKS)
     model = MaskablePPO.load(model_path)
     inner = env.env
 
@@ -307,7 +325,7 @@ if __name__ == "__main__":
         timesteps = int(arg2) if arg2 else 50000
         train_simulation(timesteps)
     elif mode == "real":
-        train_real(total_episodes=100)
+        train_real(30)
     elif mode == "eval":
         model_path = arg2 if arg2 else "self_healing_sim"
         eval_agent(model_path)

@@ -97,3 +97,10 @@ Sample output:
 - Port stats embedded in inventory nodes; standalone endpoint returns 404.
 - Topology links reconstructed from flow rules when LLDP discovery is unavailable.
 - Default ODL credentials: `admin:admin` on port 8181.
+
+## Accessing Karaf Console for ODL
+- /opt/opendaylight/bin/client
+- do random command
+
+## N.B Information
+![](/image/Reward%20Info.png)

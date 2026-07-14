@@ -109,7 +109,7 @@ class SDNClient:
         return topos[0] if topos else None
 
 
-    def get_links(self):
+    def get_links(self, fallback=None):
         topo = self.get_topology()
         if topo and "link" in topo:
             raw = topo.get("link", [])
@@ -130,7 +130,12 @@ class SDNClient:
                 })
             if links:
                 return links
-        return self._build_links_from_flows()
+        flow_links = self._build_links_from_flows()
+        if flow_links:
+            return flow_links
+        if fallback:
+            return fallback
+        return []
 
     def _build_links_from_flows(self):
         nodes = self.get_nodes()

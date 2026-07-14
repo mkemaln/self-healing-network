@@ -1,0 +1,51 @@
+[2026-07-09 12:50:57] INFO  ============================================================
+[2026-07-09 12:50:57] INFO  TRAINING MODE: Real network (GNS3 + ODL)
+[2026-07-09 12:50:57] INFO  episodes=30  steps_per_ep=50  num_links=4
+[2026-07-09 12:50:57] INFO  hyperparams: lr=0.0003  gamma=0.95  n_steps=128
+[2026-07-09 12:50:57] INFO  ============================================================
+[2026-07-09 12:51:18] INFO  Episode   1/30 | failing link=0 port=1
+[2026-07-09 12:53:14] DEBUG   step  1 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:53:57] DEBUG   step  2 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:54:40] DEBUG   step  3 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:55:10] DEBUG   step  4 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:13] DEBUG   step  5 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:55:16] DEBUG   step  6 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:19] DEBUG   step  7 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:22] DEBUG   step  8 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:25] DEBUG   step  9 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:28] DEBUG   step 10 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:31] DEBUG   step 11 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:34] DEBUG   step 12 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:37] DEBUG   step 13 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:40] DEBUG   step 14 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:43] DEBUG   step 15 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:46] DEBUG   step 16 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:55:49] DEBUG   step 17 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:52] DEBUG   step 18 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:55] DEBUG   step 19 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:55:58] DEBUG   step 20 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:01] DEBUG   step 21 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:04] DEBUG   step 22 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:07] DEBUG   step 23 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:10] DEBUG   step 24 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:13] DEBUG   step 25 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:16] DEBUG   step 26 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:19] DEBUG   step 27 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:22] DEBUG   step 28 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:25] DEBUG   step 29 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:28] DEBUG   step 30 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:31] DEBUG   step 31 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:34] DEBUG   step 32 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:37] DEBUG   step 33 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:40] DEBUG   step 34 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:43] DEBUG   step 35 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:46] DEBUG   step 36 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:49] DEBUG   step 37 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:52] DEBUG   step 38 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:56:55] DEBUG   step 39 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:56:58] DEBUG   step 40 | action=1 reward=-0.100 done=False trnc=False
+[2026-07-09 12:57:01] DEBUG   step 41 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:57:04] DEBUG   step 42 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:57:07] DEBUG   step 43 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:57:10] DEBUG   step 44 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:57:13] DEBUG   step 45 | action=1 reward=-0.100 done=False trnc=False

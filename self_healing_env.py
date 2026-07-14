@@ -32,6 +32,7 @@ class SelfHealingEnv(gym.Env):
         connectivity_weight=3.0,
         action_penalty=0.1,
         healthy_threshold=0.05,
+        fallback_links=None,
     ):
         super().__init__()
 
@@ -45,6 +46,7 @@ class SelfHealingEnv(gym.Env):
         self.connectivity_weight = connectivity_weight
         self.action_penalty = action_penalty
         self.healthy_threshold = healthy_threshold
+        self._fallback_links = fallback_links or []
 
         if not simulation_mode:
             self.client = SDNClient(odl_url)
@@ -70,7 +72,7 @@ class SelfHealingEnv(gym.Env):
 
     def _build_real_state(self):
         nodes = self.client.get_nodes()
-        self._links = self.client.get_links()
+        self._links = self.client.get_links(fallback=self._fallback_links)
         port_stats = self.client.get_all_port_stats()
 
         n_active = 0
@@ -260,7 +262,7 @@ class SelfHealingEnv(gym.Env):
         if self.simulation_mode:
             self._sim.reset()
         else:
-            self._links = self.client.get_links()
+            self._links = self.client.get_links(fallback=self._fallback_links)
 
         if options and "failure_link" in options:
             self.inject_failure(

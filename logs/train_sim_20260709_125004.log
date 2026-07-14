@@ -1,0 +1,61 @@
+[2026-07-09 12:50:04] INFO  ============================================================
+[2026-07-09 12:50:04] INFO  TRAINING MODE: Simulation  |  timesteps=50000  episodes=195
+[2026-07-09 12:50:04] INFO  hyperparams: lr=0.001  gamma=0.95  n_steps=128  max_ep_len=50
+[2026-07-09 12:50:04] INFO  ============================================================
+[2026-07-09 12:50:06] INFO  Episode   1/195 | fail link=3 severity=0.85
+[2026-07-09 12:50:07] DEBUG   step  1 | action=4 reward=+0.477 done=False trnc=False
+[2026-07-09 12:50:08] DEBUG   step  2 | action=4 reward=+0.106 done=True trnc=False
+[2026-07-09 12:50:08] INFO    -> reward=0.58  avg=0.292  steps=2  done=True
+[2026-07-09 12:50:09] INFO  Episode   2/195 | fail link=1 severity=0.91
+[2026-07-09 12:50:10] DEBUG   step  1 | action=2 reward=+0.471 done=False trnc=False
+[2026-07-09 12:50:11] DEBUG   step  2 | action=2 reward=+0.049 done=True trnc=False
+[2026-07-09 12:50:11] INFO    -> reward=0.52  avg=0.260  steps=2  done=True
+[2026-07-09 12:50:12] INFO  Episode   3/195 | fail link=3 severity=0.91
+[2026-07-09 12:50:13] DEBUG   step  1 | action=4 reward=+0.471 done=False trnc=False
+[2026-07-09 12:50:14] DEBUG   step  2 | action=4 reward=+0.057 done=True trnc=False
+[2026-07-09 12:50:14] INFO    -> reward=0.53  avg=0.264  steps=2  done=True
+[2026-07-09 12:50:15] INFO  Episode   4/195 | fail link=2 severity=0.63
+[2026-07-09 12:50:16] DEBUG   step  1 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:17] DEBUG   step  2 | action=3 reward=+0.489 done=True trnc=False
+[2026-07-09 12:50:17] INFO    -> reward=0.49  avg=0.244  steps=2  done=True
+[2026-07-09 12:50:18] INFO  Episode   5/195 | fail link=1 severity=0.88
+[2026-07-09 12:50:19] DEBUG   step  1 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:20] DEBUG   step  2 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:21] DEBUG   step  3 | action=2 reward=+0.474 done=False trnc=False
+[2026-07-09 12:50:22] DEBUG   step  4 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:23] DEBUG   step  5 | action=2 reward=+0.075 done=True trnc=False
+[2026-07-09 12:50:23] INFO    -> reward=0.55  avg=0.110  steps=5  done=True
+[2026-07-09 12:50:24] INFO  Episode   6/195 | fail link=3 severity=0.73
+[2026-07-09 12:50:25] DEBUG   step  1 | action=4 reward=+0.485 done=False trnc=False
+[2026-07-09 12:50:26] DEBUG   step  2 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:27] DEBUG   step  3 | action=4 reward=+0.195 done=True trnc=False
+[2026-07-09 12:50:27] INFO    -> reward=0.68  avg=0.227  steps=3  done=True
+[2026-07-09 12:50:28] INFO  Episode   7/195 | fail link=3 severity=0.94
+[2026-07-09 12:50:29] DEBUG   step  1 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:30] DEBUG   step  2 | action=4 reward=+0.467 done=False trnc=False
+[2026-07-09 12:50:31] DEBUG   step  3 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:32] DEBUG   step  4 | action=4 reward=+0.022 done=True trnc=False
+[2026-07-09 12:50:32] INFO    -> reward=0.49  avg=0.122  steps=4  done=True
+[2026-07-09 12:50:33] INFO  Episode   8/195 | fail link=3 severity=0.83
+[2026-07-09 12:50:34] DEBUG   step  1 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:35] DEBUG   step  2 | action=4 reward=+0.479 done=False trnc=False
+[2026-07-09 12:50:36] DEBUG   step  3 | action=4 reward=+0.118 done=True trnc=False
+[2026-07-09 12:50:36] INFO    -> reward=0.60  avg=0.199  steps=3  done=True
+[2026-07-09 12:50:37] INFO  Episode   9/195 | fail link=3 severity=0.87
+[2026-07-09 12:50:38] DEBUG   step  1 | action=4 reward=+0.475 done=False trnc=False
+[2026-07-09 12:50:39] DEBUG   step  2 | action=4 reward=+0.088 done=True trnc=False
+[2026-07-09 12:50:40] INFO    -> reward=0.56  avg=0.282  steps=2  done=True
+[2026-07-09 12:50:41] INFO  Episode  10/195 | fail link=2 severity=0.82
+[2026-07-09 12:50:42] DEBUG   step  1 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:43] DEBUG   step  2 | action=0 reward=+0.000 done=False trnc=False
+[2026-07-09 12:50:44] DEBUG   step  3 | action=3 reward=+0.479 done=False trnc=False
+[2026-07-09 12:50:45] DEBUG   step  4 | action=3 reward=+0.123 done=True trnc=False
+[2026-07-09 12:50:45] INFO    -> reward=0.60  avg=0.151  steps=4  done=True
+[2026-07-09 12:50:46] INFO  Episode  11/195 | fail link=1 severity=0.62
+[2026-07-09 12:50:47] DEBUG   step  1 | action=2 reward=+0.489 done=True trnc=False
+[2026-07-09 12:50:47] INFO    -> reward=0.49  avg=0.489  steps=1  done=True
+[2026-07-09 12:50:48] INFO  Episode  12/195 | fail link=2 severity=0.80
+[2026-07-09 12:50:49] DEBUG   step  1 | action=3 reward=+0.481 done=False trnc=False
+[2026-07-09 12:50:50] DEBUG   step  2 | action=3 reward=+0.145 done=True trnc=False
+[2026-07-09 12:50:50] INFO    -> reward=0.63  avg=0.313  steps=2  done=True
+[2026-07-09 12:50:51] INFO  Episode  13/195 | fail link=0 severity=0.78
